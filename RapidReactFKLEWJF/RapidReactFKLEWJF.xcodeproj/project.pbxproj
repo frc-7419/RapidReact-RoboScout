@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EE08A8027C349A500B78D80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08A7F27C349A500B78D80 /* AppDelegate.swift */; };
+		9EE08A8227C349A500B78D80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08A8127C349A500B78D80 /* SceneDelegate.swift */; };
+		9EE08A8927C349A700B78D80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EE08A8827C349A700B78D80 /* Assets.xcassets */; };
+		9EE08A8C27C349A700B78D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE08A8A27C349A700B78D80 /* LaunchScreen.storyboard */; };
+		9EE08A9727C349A700B78D80 /* RapidReactFKLEWJFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08A9627C349A700B78D80 /* RapidReactFKLEWJFTests.swift */; };
+		9EE08AA127C349A800B78D80 /* RapidReactFKLEWJFUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AA027C349A800B78D80 /* RapidReactFKLEWJFUITests.swift */; };
+		9EE08AA327C349A800B78D80 /* RapidReactFKLEWJFUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AA227C349A800B78D80 /* RapidReactFKLEWJFUITestsLaunchTests.swift */; };
+		9EE08AB027C34A0100B78D80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EE08AAF27C34A0100B78D80 /* Main.storyboard */; };
+		9EE08AB727C34A1200B78D80 /* ScoutingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB127C34A1100B78D80 /* ScoutingViewController.swift */; };
+		9EE08AB827C34A1200B78D80 /* AutonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB227C34A1100B78D80 /* AutonViewController.swift */; };
+		9EE08AB927C34A1200B78D80 /* EndgameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB327C34A1200B78D80 /* EndgameViewController.swift */; };
+		9EE08ABA27C34A1200B78D80 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB427C34A1200B78D80 /* Global.swift */; };
+		9EE08ABB27C34A1200B78D80 /* ProblemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB527C34A1200B78D80 /* ProblemsTableViewController.swift */; };
+		9EE08ABC27C34A1200B78D80 /* TeleOpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */; };
+		9EFC7BD727C4275D00F049DB /* GoogleAPIClientForRESTCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BD627C4275D00F049DB /* GoogleAPIClientForRESTCore */; };
+		9EFC7BD927C4275D00F049DB /* GoogleAPIClientForREST_Sheets in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BD827C4275D00F049DB /* GoogleAPIClientForREST_Sheets */; };
+		9EFC7BDC27C427A000F049DB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BDB27C427A000F049DB /* GoogleSignIn */; };
+		9EFC7BDE27C48DED00F049DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EE08A9327C349A700B78D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE08A7427C349A400B78D80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EE08A7B27C349A500B78D80;
+			remoteInfo = RapidReactFKLEWJF;
+		};
+		9EE08A9D27C349A800B78D80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE08A7427C349A400B78D80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EE08A7B27C349A500B78D80;
+			remoteInfo = RapidReactFKLEWJF;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9EE08A7C27C349A500B78D80 /* RapidReactFKLEWJF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidReactFKLEWJF.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE08A7F27C349A500B78D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EE08A8127C349A500B78D80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9EE08A8827C349A700B78D80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EE08A8B27C349A700B78D80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9EE08A8D27C349A700B78D80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EE08A9227C349A700B78D80 /* RapidReactFKLEWJFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidReactFKLEWJFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE08A9627C349A700B78D80 /* RapidReactFKLEWJFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidReactFKLEWJFTests.swift; sourceTree = "<group>"; };
+		9EE08A9C27C349A800B78D80 /* RapidReactFKLEWJFUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidReactFKLEWJFUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE08AA027C349A800B78D80 /* RapidReactFKLEWJFUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidReactFKLEWJFUITests.swift; sourceTree = "<group>"; };
+		9EE08AA227C349A800B78D80 /* RapidReactFKLEWJFUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidReactFKLEWJFUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9EE08AAF27C34A0100B78D80 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9EE08AB127C34A1100B78D80 /* ScoutingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoutingViewController.swift; sourceTree = "<group>"; };
+		9EE08AB227C34A1100B78D80 /* AutonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutonViewController.swift; sourceTree = "<group>"; };
+		9EE08AB327C34A1200B78D80 /* EndgameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndgameViewController.swift; sourceTree = "<group>"; };
+		9EE08AB427C34A1200B78D80 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		9EE08AB527C34A1200B78D80 /* ProblemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemsTableViewController.swift; sourceTree = "<group>"; };
+		9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeleOpViewController.swift; sourceTree = "<group>"; };
+		9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EE08A7927C349A500B78D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFC7BD727C4275D00F049DB /* GoogleAPIClientForRESTCore in Frameworks */,
+				9EFC7BD927C4275D00F049DB /* GoogleAPIClientForREST_Sheets in Frameworks */,
+				9EFC7BDC27C427A000F049DB /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE08A8F27C349A700B78D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE08A9927C349A800B78D80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EE08A7327C349A400B78D80 = {
+			isa = PBXGroup;
+			children = (
+				9EE08A7E27C349A500B78D80 /* RapidReactFKLEWJF */,
+				9EE08A9527C349A700B78D80 /* RapidReactFKLEWJFTests */,
+				9EE08A9F27C349A800B78D80 /* RapidReactFKLEWJFUITests */,
+				9EE08A7D27C349A500B78D80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EE08A7D27C349A500B78D80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EE08A7C27C349A500B78D80 /* RapidReactFKLEWJF.app */,
+				9EE08A9227C349A700B78D80 /* RapidReactFKLEWJFTests.xctest */,
+				9EE08A9C27C349A800B78D80 /* RapidReactFKLEWJFUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EE08A7E27C349A500B78D80 /* RapidReactFKLEWJF */ = {
+			isa = PBXGroup;
+			children = (
+				9EE08A7F27C349A500B78D80 /* AppDelegate.swift */,
+				9EE08A8127C349A500B78D80 /* SceneDelegate.swift */,
+				9EE08AAF27C34A0100B78D80 /* Main.storyboard */,
+				9EE08A8827C349A700B78D80 /* Assets.xcassets */,
+				9EE08AB227C34A1100B78D80 /* AutonViewController.swift */,
+				9EE08AB327C34A1200B78D80 /* EndgameViewController.swift */,
+				9EE08AB427C34A1200B78D80 /* Global.swift */,
+				9EE08AB527C34A1200B78D80 /* ProblemsTableViewController.swift */,
+				9EE08AB127C34A1100B78D80 /* ScoutingViewController.swift */,
+				9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */,
+				9EE08A8A27C349A700B78D80 /* LaunchScreen.storyboard */,
+				9EE08A8D27C349A700B78D80 /* Info.plist */,
+				9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */,
+			);
+			path = RapidReactFKLEWJF;
+			sourceTree = "<group>";
+		};
+		9EE08A9527C349A700B78D80 /* RapidReactFKLEWJFTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EE08A9627C349A700B78D80 /* RapidReactFKLEWJFTests.swift */,
+			);
+			path = RapidReactFKLEWJFTests;
+			sourceTree = "<group>";
+		};
+		9EE08A9F27C349A800B78D80 /* RapidReactFKLEWJFUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EE08AA027C349A800B78D80 /* RapidReactFKLEWJFUITests.swift */,
+				9EE08AA227C349A800B78D80 /* RapidReactFKLEWJFUITestsLaunchTests.swift */,
+			);
+			path = RapidReactFKLEWJFUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EE08A7B27C349A500B78D80 /* RapidReactFKLEWJF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE08AA627C349A800B78D80 /* Build configuration list for PBXNativeTarget "RapidReactFKLEWJF" */;
+			buildPhases = (
+				9EE08A7827C349A500B78D80 /* Sources */,
+				9EE08A7927C349A500B78D80 /* Frameworks */,
+				9EE08A7A27C349A500B78D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RapidReactFKLEWJF;
+			packageProductDependencies = (
+				9EFC7BD627C4275D00F049DB /* GoogleAPIClientForRESTCore */,
+				9EFC7BD827C4275D00F049DB /* GoogleAPIClientForREST_Sheets */,
+				9EFC7BDB27C427A000F049DB /* GoogleSignIn */,
+			);
+			productName = RapidReactFKLEWJF;
+			productReference = 9EE08A7C27C349A500B78D80 /* RapidReactFKLEWJF.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EE08A9127C349A700B78D80 /* RapidReactFKLEWJFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE08AA927C349A800B78D80 /* Build configuration list for PBXNativeTarget "RapidReactFKLEWJFTests" */;
+			buildPhases = (
+				9EE08A8E27C349A700B78D80 /* Sources */,
+				9EE08A8F27C349A700B78D80 /* Frameworks */,
+				9EE08A9027C349A700B78D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EE08A9427C349A700B78D80 /* PBXTargetDependency */,
+			);
+			name = RapidReactFKLEWJFTests;
+			productName = RapidReactFKLEWJFTests;
+			productReference = 9EE08A9227C349A700B78D80 /* RapidReactFKLEWJFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EE08A9B27C349A800B78D80 /* RapidReactFKLEWJFUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE08AAC27C349A800B78D80 /* Build configuration list for PBXNativeTarget "RapidReactFKLEWJFUITests" */;
+			buildPhases = (
+				9EE08A9827C349A800B78D80 /* Sources */,
+				9EE08A9927C349A800B78D80 /* Frameworks */,
+				9EE08A9A27C349A800B78D80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EE08A9E27C349A800B78D80 /* PBXTargetDependency */,
+			);
+			name = RapidReactFKLEWJFUITests;
+			productName = RapidReactFKLEWJFUITests;
+			productReference = 9EE08A9C27C349A800B78D80 /* RapidReactFKLEWJFUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EE08A7427C349A400B78D80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					9EE08A7B27C349A500B78D80 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					9EE08A9127C349A700B78D80 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9EE08A7B27C349A500B78D80;
+					};
+					9EE08A9B27C349A800B78D80 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 9EE08A7B27C349A500B78D80;
+					};
+				};
+			};
+			buildConfigurationList = 9EE08A7727C349A400B78D80 /* Build configuration list for PBXProject "RapidReactFKLEWJF" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EE08A7327C349A400B78D80;
+			packageReferences = (
+				9EFC7BD527C4275C00F049DB /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */,
+				9EFC7BDA27C427A000F049DB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 9EE08A7D27C349A500B78D80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EE08A7B27C349A500B78D80 /* RapidReactFKLEWJF */,
+				9EE08A9127C349A700B78D80 /* RapidReactFKLEWJFTests */,
+				9EE08A9B27C349A800B78D80 /* RapidReactFKLEWJFUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EE08A7A27C349A500B78D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE08A8C27C349A700B78D80 /* LaunchScreen.storyboard in Resources */,
+				9EFC7BDE27C48DED00F049DB /* GoogleService-Info.plist in Resources */,
+				9EE08A8927C349A700B78D80 /* Assets.xcassets in Resources */,
+				9EE08AB027C34A0100B78D80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE08A9027C349A700B78D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE08A9A27C349A800B78D80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EE08A7827C349A500B78D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE08ABC27C34A1200B78D80 /* TeleOpViewController.swift in Sources */,
+				9EE08AB827C34A1200B78D80 /* AutonViewController.swift in Sources */,
+				9EE08A8027C349A500B78D80 /* AppDelegate.swift in Sources */,
+				9EE08AB727C34A1200B78D80 /* ScoutingViewController.swift in Sources */,
+				9EE08AB927C34A1200B78D80 /* EndgameViewController.swift in Sources */,
+				9EE08ABB27C34A1200B78D80 /* ProblemsTableViewController.swift in Sources */,
+				9EE08A8227C349A500B78D80 /* SceneDelegate.swift in Sources */,
+				9EE08ABA27C34A1200B78D80 /* Global.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE08A8E27C349A700B78D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE08A9727C349A700B78D80 /* RapidReactFKLEWJFTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EE08A9827C349A800B78D80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE08AA127C349A800B78D80 /* RapidReactFKLEWJFUITests.swift in Sources */,
+				9EE08AA327C349A800B78D80 /* RapidReactFKLEWJFUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EE08A9427C349A700B78D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EE08A7B27C349A500B78D80 /* RapidReactFKLEWJF */;
+			targetProxy = 9EE08A9327C349A700B78D80 /* PBXContainerItemProxy */;
+		};
+		9EE08A9E27C349A800B78D80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EE08A7B27C349A500B78D80 /* RapidReactFKLEWJF */;
+			targetProxy = 9EE08A9D27C349A800B78D80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9EE08A8A27C349A700B78D80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EE08A8B27C349A700B78D80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EE08AA427C349A800B78D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EE08AA527C349A800B78D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EE08AA727C349A800B78D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RapidReactFKLEWJF/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EE08AA827C349A800B78D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				GCC_PREPROCESSOR_DEFINITIONS = " SWIFT_PACKAGE=1";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RapidReactFKLEWJF/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJF;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EE08AAA27C349A800B78D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RapidReactFKLEWJF.app/RapidReactFKLEWJF";
+			};
+			name = Debug;
+		};
+		9EE08AAB27C349A800B78D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RapidReactFKLEWJF.app/RapidReactFKLEWJF";
+			};
+			name = Release;
+		};
+		9EE08AAD27C349A800B78D80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJFUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RapidReactFKLEWJF;
+			};
+			name = Debug;
+		};
+		9EE08AAE27C349A800B78D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJFUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RapidReactFKLEWJF;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EE08A7727C349A400B78D80 /* Build configuration list for PBXProject "RapidReactFKLEWJF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE08AA427C349A800B78D80 /* Debug */,
+				9EE08AA527C349A800B78D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE08AA627C349A800B78D80 /* Build configuration list for PBXNativeTarget "RapidReactFKLEWJF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE08AA727C349A800B78D80 /* Debug */,
+				9EE08AA827C349A800B78D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE08AA927C349A800B78D80 /* Build configuration list for PBXNativeTarget "RapidReactFKLEWJFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE08AAA27C349A800B78D80 /* Debug */,
+				9EE08AAB27C349A800B78D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE08AAC27C349A800B78D80 /* Build configuration list for PBXNativeTarget "RapidReactFKLEWJFUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EE08AAD27C349A800B78D80 /* Debug */,
+				9EE08AAE27C349A800B78D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EFC7BD527C4275C00F049DB /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/google-api-objectivec-client-for-rest";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		9EFC7BDA27C427A000F049DB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EFC7BD627C4275D00F049DB /* GoogleAPIClientForRESTCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EFC7BD527C4275C00F049DB /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForRESTCore;
+		};
+		9EFC7BD827C4275D00F049DB /* GoogleAPIClientForREST_Sheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EFC7BD527C4275C00F049DB /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Sheets;
+		};
+		9EFC7BDB27C427A000F049DB /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EFC7BDA27C427A000F049DB /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9EE08A7427C349A400B78D80 /* Project object */;
+}
