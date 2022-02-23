@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4IC-CD-2DX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -63,6 +64,7 @@
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FFP-K3-65W">
                                         <rect key="frame" x="0.5" y="65" width="94" height="15"/>
+                                        <color key="backgroundColor" red="0.64313725490196072" green="0.8784313725490196" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="clickedLowerHubStepper:" destination="PQe-sR-wb0" eventType="valueChanged" id="eSB-c9-kQk"/>
                                         </connections>
@@ -90,6 +92,7 @@
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="AFY-Ub-xk2">
                                         <rect key="frame" x="10.5" y="65" width="94" height="15"/>
+                                        <color key="backgroundColor" red="0.64313725490196072" green="0.8784313725490196" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="clickedUpperHubStepper:" destination="PQe-sR-wb0" eventType="valueChanged" id="VUc-wS-HlC"/>
                                         </connections>
@@ -188,7 +191,8 @@
                                     </label>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-Wk-dcf">
                                         <rect key="frame" x="12" y="102" width="94" height="32"/>
-                                        <color key="backgroundColor" red="0.64371871950000004" green="0.87946701049999998" blue="0.87535631660000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.64313725490196072" green="0.8784313725490196" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.64313725489999995" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="clickedLowerHubStepper:" destination="CkW-qP-Twi" eventType="valueChanged" id="1xy-S8-MJa"/>
                                         </connections>
@@ -297,21 +301,6 @@
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-Kd-AgZ">
-                                <rect key="frame" x="30" y="185.5" width="354" height="32"/>
-                                <color key="backgroundColor" red="0.72907514299999998" green="0.9309725888" blue="0.92736135679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <segments>
-                                    <segment title="Low"/>
-                                    <segment title="Mid"/>
-                                    <segment title="High"/>
-                                    <segment title="Traversal"/>
-                                    <segment title="None"/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" red="0.41397128929999999" green="0.62961699429999995" blue="0.64599131570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="hangarLevel:" destination="f5I-7r-dBX" eventType="valueChanged" id="0dM-hU-r1h"/>
-                                </connections>
-                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upper Hub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxF-XN-Wek">
                                 <rect key="frame" x="30" y="271" width="103" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="22"/>
@@ -385,6 +374,21 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-Kd-AgZ">
+                                <rect key="frame" x="15" y="186" width="384" height="32"/>
+                                <color key="backgroundColor" red="0.72907514299999998" green="0.9309725888" blue="0.92736135679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <segments>
+                                    <segment title="Low"/>
+                                    <segment title="Mid"/>
+                                    <segment title="High"/>
+                                    <segment title="Traversal"/>
+                                    <segment title="None"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.41397128929999999" green="0.62961699429999995" blue="0.64599131570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="hangarLevel:" destination="f5I-7r-dBX" eventType="valueChanged" id="0dM-hU-r1h"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5kD-FO-7RN"/>
                         <color key="backgroundColor" red="0.12871263429999999" green="0.14216038819999999" blue="0.1890164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -436,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktg-xB-kSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="825" y="1465"/>
+            <point key="canvasLocation" x="824.63768115942037" y="1464.5089285714284"/>
         </scene>
         <!--Scouting View Controller-->
         <scene sceneID="3VG-eu-rRd">
@@ -523,7 +527,7 @@
                                     <constraint firstAttribute="width" constant="86" id="eKQ-98-6h7"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="teleop">
+                                <buttonConfiguration key="configuration" style="plain" title="Teleop">
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -537,7 +541,7 @@
                                     <constraint firstAttribute="width" constant="76" id="GHh-4C-n69"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="auton">
+                                <buttonConfiguration key="configuration" style="plain" title="Auton">
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -551,7 +555,7 @@
                                     <constraint firstAttribute="height" constant="45" id="ZG8-Xe-YHD"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="endgame">
+                                <buttonConfiguration key="configuration" style="plain" title="Endgame">
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -565,7 +569,7 @@
                                     <constraint firstAttribute="width" constant="104" id="zab-71-T5l"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="problems">
+                                <buttonConfiguration key="configuration" style="plain" title="Problems">
                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -623,7 +627,7 @@
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kmw-Lj-y1c">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="31"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
