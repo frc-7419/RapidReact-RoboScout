@@ -4,7 +4,7 @@ import UIKit
 import Combine
 import GTMSessionFetcherCore
 
-class ScoutingViewController: UIViewController {
+class ScoutingViewController: UIViewController, UITextFieldDelegate {
     
     private let service = GTLRSheetsService()
     private var signedInSubscription: AnyCancellable?
@@ -23,7 +23,7 @@ class ScoutingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.teamNumberTextField.delegate = self
         /*
          Here we use Combine in order to react in real-time to the signed in user stored in the AppDelegate
          changing. This way the UI will update immediately and the isEnabled property will be toggled in one place.
@@ -51,6 +51,10 @@ class ScoutingViewController: UIViewController {
                 logoutButton.isEnabled = false
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return teamNumberTextField.resignFirstResponder()
     }
     
     @IBAction func signInWithGoogle(_ sender: Any) {
