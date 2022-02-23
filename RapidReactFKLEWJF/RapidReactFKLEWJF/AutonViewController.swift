@@ -50,6 +50,7 @@ class AutonViewController: UIViewController {
             updateScore.text = String(lowerhubAdd + upperhubAdd)
         }
         global.autonData["lowerScore"] = lowerLabel.text
+        global.autonData["totalScore"] = updateScore.text
     }
     
     @IBAction func clickedUpperHubStepper(_ sender: UIStepper) {
@@ -63,6 +64,7 @@ class AutonViewController: UIViewController {
             updateScore.text = String(lowerhubAdd + upperhubAdd)
         }
         global.autonData["upperScore"] = upperLabel.text
+        global.autonData["totalScore"] = updateScore.text
     }
     
     /*

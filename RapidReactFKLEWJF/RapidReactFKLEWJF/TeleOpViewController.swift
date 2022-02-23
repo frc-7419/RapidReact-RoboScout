@@ -25,6 +25,7 @@ class TeleOpViewController: UIViewController {
         upperhubAdd = Int(upperLabel.text!)!*2
         updateScore.text = String(lowerhubAdd + upperhubAdd)
         global.teleOpData["lowerScore"] = lowerLabel.text!
+        global.teleOpData["totalScore"] = updateScore.text!
     }
     
     @IBAction func clickedUpperHubStepper(_ sender: UIStepper) {
@@ -33,6 +34,7 @@ class TeleOpViewController: UIViewController {
         upperhubAdd = Int(upperLabel.text!)!*2
         updateScore.text = String(lowerhubAdd + upperhubAdd)
         global.teleOpData["upperScore"] = upperLabel.text!
+        global.teleOpData["totalScore"] = updateScore.text!
     }
     
     var teleOpTotal = [""]

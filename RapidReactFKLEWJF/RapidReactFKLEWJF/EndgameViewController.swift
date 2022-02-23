@@ -55,6 +55,7 @@ class EndgameViewController: UIViewController {
               break;
         }
         global.endGameData["hangar"] = hangar
+        global.endGameData["totalScore"] = updateScore.text!
     }
     @IBAction func scoringBonusClicked(_ sender: UISwitch) {
         if sender.isOn == true {
@@ -64,6 +65,7 @@ class EndgameViewController: UIViewController {
             scoringBonusSelected = false
         }
         global.endGameData["scoringBonus"] = scoringBonusSelected
+        global.endGameData["totalScore"] = updateScore.text!
     }
     
     @IBAction func hangarBonusClicked(_ sender: UISwitch) {
@@ -74,6 +76,7 @@ class EndgameViewController: UIViewController {
             hangarBonusSelected = false
         }
         global.endGameData["hangarBonus"] = hangarBonusSelected
+        global.endGameData["totalScore"] = updateScore.text!
     }
     
     
@@ -89,6 +92,7 @@ class EndgameViewController: UIViewController {
             updateScore.text = String(lowerhubAdd + upperhubAdd)
         }
         global.endGameData["upperScore"] = upperHubLabel.text!
+        global.endGameData["totalScore"] = updateScore.text!
     }
     @IBAction func lowerHubStepper(_ sender: UIStepper) {
         lowerHubLabel.text = String(Int(sender.value))
@@ -102,6 +106,7 @@ class EndgameViewController: UIViewController {
             updateScore.text = String(lowerhubAdd + upperhubAdd)
         }
         global.endGameData["lowerScore"] = lowerHubLabel.text!
+        global.endGameData["totalScore"] = updateScore.text!
     }
     
     var endGameTotal = [""]
