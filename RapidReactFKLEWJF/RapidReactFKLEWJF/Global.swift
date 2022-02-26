@@ -38,10 +38,10 @@ class Global {
             }
         }
         
-        let scoutingArray: [String] = [String(describing: scoutingData["teamNumber"]!)]
-        let autonArray: [String] = [String(describing: autonData["didMoveOff"]!), String(describing: autonData["lowerScore"]!), String(describing: autonData["upperScore"]!), String(describing: autonData["totalScore"]!)]
-        let teleOpArray: [String] = [String(describing: teleOpData["lowerScore"]!), String(describing: teleOpData["upperScore"]!), String(describing: teleOpData["totalScore"]!)]
-        let endGameArray: [String] = [String(describing: endGameData["lowerScore"]!), String(describing: endGameData["upperScore"]!), String(describing: endGameData["hangar"]!), String(describing: endGameData["scoringBonus"]!), String(describing: endGameData["hangarBonus"]!), String(describing: endGameData["totalScore"]!)]
+        let scoutingArray: [String] = try! [String(describing: scoutingData["teamNumber"]!)]
+        let autonArray: [String] = try! [String(describing: autonData["didMoveOff"]!), String(describing: autonData["lowerScore"]!), String(describing: autonData["upperScore"]!), String(describing: autonData["totalScore"]!)]
+        let teleOpArray: [String] = try! [String(describing: teleOpData["lowerScore"]!), String(describing: teleOpData["upperScore"]!), String(describing: teleOpData["totalScore"]!)]
+        let endGameArray: [String] = try! [String(describing: endGameData["lowerScore"]!), String(describing: endGameData["upperScore"]!), String(describing: endGameData["hangar"]!), String(describing: endGameData["scoringBonus"]!), String(describing: endGameData["hangarBonus"]!), String(describing: endGameData["totalScore"]!)]
 
         return scoutingArray + autonArray + teleOpArray + endGameArray + problemsArray;
     }
