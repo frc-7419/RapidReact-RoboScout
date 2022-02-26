@@ -38,22 +38,30 @@ class ProblemTableViewCell: UITableViewCell {
 }
 
 class ProblemsTableViewController: UITableViewController {
-
-    var rows = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // aesthetic
         tableView.contentInset.top = 30
+        // add initial row if empty
+
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if (global.problemCells.count == 0) {
+            let indexPath = IndexPath(row: 1, section: 0)
+            global.problemCells.append(tableView.dequeueReusableCell(withIdentifier: "problemCell", for: indexPath) as! ProblemTableViewCell)
+        }
+        self.tableView.reloadData()
     }
     
     @IBAction func addTableRow(_ sender: Any) {
-        rows += 1
+        let indexPath = IndexPath(row: global.problemCells.count+1, section: 0)
+        global.problemCells.append(tableView.dequeueReusableCell(withIdentifier: "problemCell", for: indexPath) as! ProblemTableViewCell)
         self.tableView.reloadData()
     }
     
     @IBAction func removeTableRow(_ sender: Any) {
-        rows -= 1
         global.problemCells.remove(at: global.problemCells.count-1)
         self.tableView.reloadData()
     }
@@ -62,13 +70,7 @@ class ProblemsTableViewController: UITableViewController {
         var cell: UITableViewCell!
         
         if (indexPath.section == 0) { // problemCell
-            if (global.problemCells.indices.contains(indexPath.row)) {
-                cell =  global.problemCells[indexPath.row]
-            } else {
-                let cell_i = tableView.dequeueReusableCell(withIdentifier: "problemCell", for: indexPath) as! ProblemTableViewCell
-                global.problemCells.insert(cell_i, at: indexPath.row)
-                cell = cell_i
-            }
+            cell =  global.problemCells[indexPath.row]
         }
         else if (indexPath.section == 1) { // addProblemCell
             cell = tableView.dequeueReusableCell(withIdentifier: "addProblemCell", for: indexPath)
@@ -83,7 +85,7 @@ class ProblemsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (section == 0) {
-            return rows
+            return global.problemCells.count
         }
         return 1
     }

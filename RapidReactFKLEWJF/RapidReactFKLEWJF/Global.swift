@@ -32,8 +32,10 @@ class Global {
     func getTotalArray() -> [Any] {
         var problemsArray: [String] = []
         for problem in problemCells {
-            problemsArray.append(problem.data["problem"]!)
-            problemsArray.append(problem.data["section"]!)
+            if (problem.data["problem"] != "") {
+                problemsArray.append(problem.data["problem"]!)
+                problemsArray.append(problem.data["section"]!)
+            }
         }
         
         let scoutingArray: [String] = [String(describing: scoutingData["teamNumber"]!)]
