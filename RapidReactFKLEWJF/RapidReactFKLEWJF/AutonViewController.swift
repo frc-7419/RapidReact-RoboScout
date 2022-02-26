@@ -10,7 +10,10 @@ class AutonViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        updateScore.text = "0"
+//        updateScore.text = "0"
+        updateScore.text = String(describing: global.autonData["totalScore"]!)
+        lowerLabel.text = String(describing: global.autonData["lowerScore"]!)
+        upperLabel.text = String(describing: global.autonData["upperScore"]!)
     }
     var didMoveOff = false
     var totalScore = 0

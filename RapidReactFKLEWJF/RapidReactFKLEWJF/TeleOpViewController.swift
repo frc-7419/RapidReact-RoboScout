@@ -17,6 +17,9 @@ class TeleOpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         updateScore.text = totalScore.description // 0
+        updateScore.text = String(describing: global.teleOpData["totalScore"]!)
+        lowerLabel.text = String(describing: global.teleOpData["lowerScore"]!)
+        upperLabel.text = String(describing: global.teleOpData["upperScore"]!)
     }
     
     @IBAction func clickedLowerHubStepper(_ sender: UIStepper) {
