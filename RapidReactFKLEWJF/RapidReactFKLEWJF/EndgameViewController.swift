@@ -14,6 +14,9 @@ class EndgameViewController: UIViewController {
         // Do any additional setup after loading the view.
         updateScore.text = "0"
         initControl.selectedSegmentIndex = 4
+        updateScore.text = String(describing: global.autonData["totalScore"]!)
+        lowerHubLabel.text = String(describing: global.autonData["lowerScore"]!)
+        upperHubLabel.text = String(describing: global.autonData["upperScore"]!)
         
     }
     var totalScore = 0

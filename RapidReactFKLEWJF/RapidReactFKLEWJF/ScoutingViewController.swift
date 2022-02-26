@@ -90,6 +90,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
+        global.teleOpData.removeAll()
         
     }
     
