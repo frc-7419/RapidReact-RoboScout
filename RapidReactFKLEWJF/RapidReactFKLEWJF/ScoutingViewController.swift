@@ -104,25 +104,9 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         global.endGameData["lowerScore"] = 0
         global.endGameData["upperScore"] = 0
         global.endGameData["totalScore"] = 0
-//            var autonData: [String: Any] = [
-//        "didMoveOff": false,
-//        "lowerScore": 0,
-//        "upperScore": 0,
-//        "totalScore": 0,
-//    ]
-//    var teleOpData: [String: Any] = [
-//        "upperScore": 0,
-//        "lowerScore": 0,
-//        "totalScore": 0,
-//    ]
-//    var endGameData: [String: Any] = [
-//        "lowerScore": 0,
-//        "upperScore": 0,
-//        "hangar": "none",
-//        "scoringBonus": false,
-//        "hangarBonus": false,
-//        "totalScore": 0,
-//    ]
+        global.endGameData["hangar"] = "none"
+        global.endGameData["scoringBonus"] = false
+        global.endGameData["hangarBonus"] = false
     }
     
     
