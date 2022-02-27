@@ -107,6 +107,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         global.endGameData["hangar"] = "none"
         global.endGameData["scoringBonus"] = false
         global.endGameData["hangarBonus"] = false
+	global.problemCells = []
     }
     
     
