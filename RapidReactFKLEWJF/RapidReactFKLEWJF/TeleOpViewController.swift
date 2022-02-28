@@ -19,6 +19,8 @@ class TeleOpViewController: UIViewController {
         updateScore.text = String(describing: global.teleOpData["totalScore"]!)
         lowerLabel.text = String(describing: global.teleOpData["lowerScore"]!)
         upperLabel.text = String(describing: global.teleOpData["upperScore"]!)
+        lowerHubStepper.value = Double(String(describing: global.teleOpData["lowerScore"]!)) ?? 0.0
+        upperHubStepper.value = Double(String(describing: global.teleOpData["upperScore"]!)) ?? 0.0
     }
     
     @IBAction func clickedLowerHubStepper(_ sender: UIStepper) {

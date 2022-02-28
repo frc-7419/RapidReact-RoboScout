@@ -7,6 +7,8 @@ class EndgameViewController: UIViewController {
     @IBOutlet weak var initControl: UISegmentedControl!
     @IBOutlet weak var scoringBonus: UISwitch!
     @IBOutlet weak var hangarBonus: UISwitch!
+    @IBOutlet weak var upperHubStepper: UIStepper!
+    @IBOutlet weak var lowerHubStepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +19,8 @@ class EndgameViewController: UIViewController {
         updateScore.text = String(describing: global.endGameData["totalScore"]!)
         lowerHubLabel.text = String(describing: global.endGameData["lowerScore"]!)
         upperHubLabel.text = String(describing: global.endGameData["upperScore"]!)
-        
+        lowerHubStepper.value = Double(String(describing: global.endGameData["lowerScore"]!)) ?? 0.0
+        upperHubStepper.value = Double(String(describing: global.endGameData["upperScore"]!)) ?? 0.0
     }
     var totalScore = 0
     var lowerhubAdd = 0

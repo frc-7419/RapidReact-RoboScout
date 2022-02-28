@@ -291,8 +291,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="8HS-Q6-ZfD"/>
                     <connections>
+                        <outlet property="lowerHubStepper" destination="1nF-Wk-dcf" id="Clv-Je-KaJ"/>
                         <outlet property="lowerLabel" destination="hQ6-IH-qyw" id="HG0-zS-5xU"/>
                         <outlet property="updateScore" destination="dSZ-0O-7w8" id="yr7-2L-5lr"/>
+                        <outlet property="upperHubStepper" destination="bBo-fm-QKm" id="5yc-8P-ca0"/>
                         <outlet property="upperLabel" destination="t60-8M-CvB" id="VJq-pe-NsL"/>
                     </connections>
                 </viewController>
@@ -470,9 +472,11 @@
                         <outlet property="hangarBonus" destination="o1o-dU-m2W" id="AQg-mN-YnN"/>
                         <outlet property="initControl" destination="vqC-Kd-AgZ" id="UMe-RF-8ml"/>
                         <outlet property="lowerHubLabel" destination="Bo4-Nf-HNF" id="o1U-0p-aze"/>
+                        <outlet property="lowerHubStepper" destination="0fT-AV-0o6" id="h8r-J0-YMi"/>
                         <outlet property="scoringBonus" destination="tYJ-kD-equ" id="liB-e3-sWY"/>
                         <outlet property="updateScore" destination="P8B-Lm-Okc" id="Umm-Wk-cLW"/>
                         <outlet property="upperHubLabel" destination="yNn-pq-9q6" id="O5Y-Dj-8NJ"/>
+                        <outlet property="upperHubStepper" destination="d7I-MM-ghY" id="en8-HS-q15"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ktg-xB-kSL" userLabel="First Responder" sceneMemberID="firstResponder"/>

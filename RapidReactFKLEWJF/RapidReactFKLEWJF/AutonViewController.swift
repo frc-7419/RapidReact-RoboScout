@@ -5,7 +5,9 @@ class AutonViewController: UIViewController {
     @IBOutlet weak var upperLabel: UILabel!
     @IBOutlet weak var lowerLabel: UILabel!
     @IBOutlet weak var updateScore: UILabel!
-        
+    @IBOutlet weak var lowerHubStepper: UIStepper!
+    @IBOutlet weak var upperHubStepper: UIStepper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -14,6 +16,8 @@ class AutonViewController: UIViewController {
         updateScore.text = String(describing: global.autonData["totalScore"]!)
         lowerLabel.text = String(describing: global.autonData["lowerScore"]!)
         upperLabel.text = String(describing: global.autonData["upperScore"]!)
+        lowerHubStepper.value = Double(String(describing: global.autonData["lowerScore"]!)) ?? 0.0
+        upperHubStepper.value = Double(String(describing: global.autonData["upperScore"]!)) ?? 0.0
     }
     var didMoveOff = false
     var totalScore = 0
