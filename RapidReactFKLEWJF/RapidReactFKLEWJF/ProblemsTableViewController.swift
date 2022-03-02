@@ -7,6 +7,7 @@ class ProblemTableViewCell: UITableViewCell {
         "problem": "",
         "section": ""
     ]
+    @IBOutlet weak var problemInput: UITextField!
     
     @IBOutlet weak var gameSectionButton: UIButton! {
         didSet {
@@ -34,6 +35,11 @@ class ProblemTableViewCell: UITableViewCell {
         self.data["problem"] = sender.text!
     }
     
+    func reset() {
+        self.data["problem"] = ""
+        self.data["section"] = ""
+        problemInput.text = self.data["problem"]
+    }
 
 }
 
@@ -62,7 +68,9 @@ class ProblemsTableViewController: UITableViewController {
     }
     
     @IBAction func removeTableRow(_ sender: Any) {
+        global.problemCells[global.problemCells.count-1].reset()
         global.problemCells.remove(at: global.problemCells.count-1)
+        // reset data on remove
         self.tableView.reloadData()
     }
     
