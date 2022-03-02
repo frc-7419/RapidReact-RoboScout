@@ -121,7 +121,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KqI-IW-9jA"/>
-                        <color key="backgroundColor" red="0.1294117719" green="0.1411764771" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DnL-RM-4cA" firstAttribute="top" secondItem="Trb-vP-RPO" secondAttribute="bottom" constant="105.5" id="Hsj-0d-Jyh"/>
@@ -286,7 +286,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ocm-HU-DLK"/>
-                        <color key="backgroundColor" red="0.1294117719" green="0.1411764771" blue="0.18823529780000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="tGS-Pi-DB7" firstAttribute="top" secondItem="eTW-ej-pHI" secondAttribute="bottom" constant="169" id="EPA-a3-TRk"/>
                             <constraint firstItem="RvV-6m-uCz" firstAttribute="top" secondItem="eTW-ej-pHI" secondAttribute="bottom" constant="47" id="KVn-gS-tok"/>
@@ -447,7 +447,7 @@
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5kD-FO-7RN"/>
-                        <color key="backgroundColor" red="0.12871263429999999" green="0.14216038819999999" blue="0.1890164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="centerX" secondItem="i5E-cm-OeJ" secondAttribute="centerX" id="3oe-Ka-W2c"/>
                             <constraint firstItem="8Qs-Iy-gJL" firstAttribute="top" secondItem="jCY-Tk-CpB" secondAttribute="bottom" constant="60" id="5sd-qs-P79"/>
@@ -774,7 +774,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="886-1I-iYA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.12941176469999999" green="0.14117647059999999" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problems" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kmw-Lj-y1c">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
