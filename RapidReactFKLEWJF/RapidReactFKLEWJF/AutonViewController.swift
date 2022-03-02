@@ -2,6 +2,7 @@ import UIKit
 
 class AutonViewController: UIViewController {
 
+    @IBOutlet weak var movesOffTarmacSwitch: UISwitch!
     @IBOutlet weak var upperLabel: UILabel!
     @IBOutlet weak var lowerLabel: UILabel!
     @IBOutlet weak var updateScore: UILabel!
@@ -13,11 +14,23 @@ class AutonViewController: UIViewController {
 
         // Do any additional setup after loading the view.
 //        updateScore.text = "0"
-        updateScore.text = String(describing: global.autonData["totalScore"]!)
+//        updateScore.text = String(describing: global.autonData["totalScore"]!)
         lowerLabel.text = String(describing: global.autonData["lowerScore"]!)
         upperLabel.text = String(describing: global.autonData["upperScore"]!)
         lowerHubStepper.value = Double(String(describing: global.autonData["lowerScore"]!)) ?? 0.0
         upperHubStepper.value = Double(String(describing: global.autonData["upperScore"]!)) ?? 0.0
+        movesOffTarmacSwitch.isOn = Bool(String(describing: global.autonData["didMoveOff"]!)) ?? false
+        if movesOffTarmacSwitch.isOn {
+            updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
+            didMoveOff = true
+        }
+        if !movesOffTarmacSwitch.isOn {
+            updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
+            didMoveOff = false
+        }
+//        else if !movesOffTarmacSwitch.isOn {
+//            updateScore.text = String(describing: global.autonData["totalScore"]!)
+//        }
     }
     var didMoveOff = false
     var totalScore = 0
@@ -36,13 +49,13 @@ class AutonViewController: UIViewController {
     
     
     @IBAction func movesOffTarmac(_ sender: UISwitch) {
-        if sender.isOn == true {
+        if movesOffTarmacSwitch.isOn == true {
             didMoveOff = true
-            updateScore.text = String(lowerhubAdd + upperhubAdd + 2)
+            updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
         }
-        if sender.isOn == false {
+        if movesOffTarmacSwitch.isOn == false {
             didMoveOff = false
-            updateScore.text = String(lowerhubAdd + upperhubAdd)
+            updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
         }
         global.autonData["didMoveOff"] = didMoveOff
     }
