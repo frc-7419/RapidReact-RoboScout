@@ -440,6 +440,7 @@
                                 <color key="onTintColor" red="0.72907514299999998" green="0.9309725888" blue="0.92736135679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="thumbTintColor" red="0.41397128929999999" green="0.62961699429999995" blue="0.64599131570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
+                                    <action selector="hangarBonusClicked:" destination="f5I-7r-dBX" eventType="valueChanged" id="MXO-y6-S87"/>
                                     <action selector="hangarBonusDone:" destination="f5I-7r-dBX" eventType="valueChanged" id="Omz-W4-XJs"/>
                                 </connections>
                             </switch>

@@ -12,21 +12,39 @@ class EndgameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        scoringBonus.isOn = Bool(String(describing: global.endGameData["scoringBonus"]!)) ?? false
+        hangarBonus.isOn = Bool(String(describing: global.endGameData["hangarBonus"]!)) ?? false
         // Do any additional setup after loading the view.
         updateScore.text = "0"
-        initControl.selectedSegmentIndex = 4
+        initControl.selectedSegmentIndex =  Int(String(describing: global.endGameData["hangar"]!)) ?? 4
+        if global.endGameData["hangar"] as! String == "low" {
+            initControl.selectedSegmentIndex = 0
+            
+        }
+        if global.endGameData["hangar"] as! String == "mid" {
+            initControl.selectedSegmentIndex = 1
+        }
+        if global.endGameData["hangar"] as! String == "high" {
+            initControl.selectedSegmentIndex = 2
+        }
+        if global.endGameData["hangar"] as! String == "traversal" {
+            initControl.selectedSegmentIndex = 3
+        }
+        if global.endGameData["hangar"] as! String == "none" {
+            initControl.selectedSegmentIndex = 4
+        }
         updateScore.text = String(describing: global.endGameData["totalScore"]!)
         lowerHubLabel.text = String(describing: global.endGameData["lowerScore"]!)
         upperHubLabel.text = String(describing: global.endGameData["upperScore"]!)
         lowerHubStepper.value = Double(String(describing: global.endGameData["lowerScore"]!)) ?? 0.0
         upperHubStepper.value = Double(String(describing: global.endGameData["upperScore"]!)) ?? 0.0
+        
     }
     var totalScore = 0
     var lowerhubAdd = 0
     var upperhubAdd = 0
-    var hangar = "low"
-    var hangarAdd = 4
+    var hangar = "none"
+    var hangarAdd = 0
     var didSelect = true
     var scoringBonusSelected = false
     var hangarBonusSelected = false
@@ -36,30 +54,26 @@ class EndgameViewController: UIViewController {
               hangar = "low"
               hangarAdd = 4
               totalScore = 4
-              updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
             case 1:
               hangar = "mid"
               hangarAdd = 6
               totalScore = 6
-              updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
             case 2:
               hangar = "high"
               hangarAdd = 10
               totalScore = 10
-              updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
             case 3:
               hangar = "traversal"
               hangarAdd = 15
               totalScore = 15
-              updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
             case 4:
               hangar = "none"
               hangarAdd = 0
               totalScore = 0
-              updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
             default:
               break;
         }
+        updateScore.text = String(Int(lowerHubLabel.text!)!*1 + Int(upperHubLabel.text!)!*2 + hangarAdd)
         global.endGameData["hangar"] = hangar
         global.endGameData["totalScore"] = updateScore.text!
     }

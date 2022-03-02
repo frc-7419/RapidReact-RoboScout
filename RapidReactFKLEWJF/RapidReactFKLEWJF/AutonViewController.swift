@@ -20,12 +20,14 @@ class AutonViewController: UIViewController {
         lowerHubStepper.value = Double(String(describing: global.autonData["lowerScore"]!)) ?? 0.0
         upperHubStepper.value = Double(String(describing: global.autonData["upperScore"]!)) ?? 0.0
         movesOffTarmacSwitch.isOn = Bool(String(describing: global.autonData["didMoveOff"]!)) ?? false
-        if movesOffTarmacSwitch.isOn {
+        if movesOffTarmacSwitch.isOn == true {
             updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
             didMoveOff = true
         }
-        if !movesOffTarmacSwitch.isOn {
+        if movesOffTarmacSwitch.isOn == false {
             updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
             didMoveOff = false
         }
 //        else if !movesOffTarmacSwitch.isOn {
@@ -52,10 +54,12 @@ class AutonViewController: UIViewController {
         if movesOffTarmacSwitch.isOn == true {
             didMoveOff = true
             updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
         }
         if movesOffTarmacSwitch.isOn == false {
             didMoveOff = false
             updateScore.text = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
         }
         global.autonData["didMoveOff"] = didMoveOff
     }
@@ -70,7 +74,12 @@ class AutonViewController: UIViewController {
             updateScore.text = String(lowerhubAdd + upperhubAdd)
         }
         global.autonData["lowerScore"] = lowerLabel.text
-        global.autonData["totalScore"] = updateScore.text
+        if movesOffTarmacSwitch.isOn == true {
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
+        }
+        else if movesOffTarmacSwitch.isOn == false {
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
+        }
     }
     
     @IBAction func clickedUpperHubStepper(_ sender: UIStepper) {
@@ -84,7 +93,12 @@ class AutonViewController: UIViewController {
             updateScore.text = String(lowerhubAdd + upperhubAdd)
         }
         global.autonData["upperScore"] = upperLabel.text
-        global.autonData["totalScore"] = updateScore.text
+        if movesOffTarmacSwitch.isOn == true {
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4 + 2)
+        }
+        else if movesOffTarmacSwitch.isOn == false {
+            global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
+        }
     }
     
     /*
