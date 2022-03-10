@@ -542,7 +542,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Yfx-rY-uWQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
                                     <action selector="teamNumberChanged:" destination="4IC-CD-2DX" eventType="editingDidEnd" id="bvL-pA-cd1"/>
                                 </connections>
@@ -813,7 +813,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Problem" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xe3-fK-YJ6">
                                                     <rect key="frame" x="0.0" y="0.0" width="267" height="34"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                     <connections>
                                                         <action selector="problemChanged:" destination="h6c-gl-EzP" eventType="editingChanged" id="QYu-54-Yhh"/>
                                                     </connections>

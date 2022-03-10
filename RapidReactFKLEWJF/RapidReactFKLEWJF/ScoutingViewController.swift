@@ -8,6 +8,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     
     private let service = GTLRSheetsService()
     private var signedInSubscription: AnyCancellable?
+    //scrollView.keyboardDismissMode = .Interactive
 
     @IBOutlet weak var output: UILabel!
     @IBOutlet weak var signInButton: UIButton!
