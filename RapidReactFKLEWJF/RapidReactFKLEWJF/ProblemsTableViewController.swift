@@ -47,6 +47,8 @@ class ProblemsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
         // aesthetic
         tableView.contentInset.top = 30
         // add initial row if empty
