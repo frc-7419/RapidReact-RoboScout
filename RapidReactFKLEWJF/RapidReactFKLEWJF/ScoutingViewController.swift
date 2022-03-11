@@ -24,7 +24,6 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("dismissKeyboard")))
         self.teamNumberTextField.delegate = self
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
@@ -117,10 +116,6 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onLogoutPress(_ sender: Any) {
         UIApplication.appDelegate.signOut()
-    }
-    
-    func dismissKeyboard() {
-        teamNumberTextField.resignFirstResponder()
     }
     
     // Helper for showing an alert
