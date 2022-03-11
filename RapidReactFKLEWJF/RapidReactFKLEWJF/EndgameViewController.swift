@@ -19,19 +19,23 @@ class EndgameViewController: UIViewController {
         initControl.selectedSegmentIndex =  Int(String(describing: global.endGameData["hangar"]!)) ?? 4
         if global.endGameData["hangar"] as! String == "low" {
             initControl.selectedSegmentIndex = 0
-            
+            hangarAdd = 4
         }
         if global.endGameData["hangar"] as! String == "mid" {
             initControl.selectedSegmentIndex = 1
+            hangarAdd = 6
         }
         if global.endGameData["hangar"] as! String == "high" {
             initControl.selectedSegmentIndex = 2
+            hangarAdd = 10
         }
         if global.endGameData["hangar"] as! String == "traversal" {
             initControl.selectedSegmentIndex = 3
+            hangarAdd = 15
         }
         if global.endGameData["hangar"] as! String == "none" {
             initControl.selectedSegmentIndex = 4
+            hangarAdd = 0
         }
         updateScore.text = String(describing: global.endGameData["totalScore"]!)
         lowerHubLabel.text = String(describing: global.endGameData["lowerScore"]!)
@@ -45,7 +49,6 @@ class EndgameViewController: UIViewController {
     var upperhubAdd = 0
     var hangar = "none"
     var hangarAdd = 0
-    var didSelect = true
     var scoringBonusSelected = false
     var hangarBonusSelected = false
     @IBAction func hangarLevel(_ sender: UISegmentedControl) {
@@ -101,30 +104,20 @@ class EndgameViewController: UIViewController {
     
     
     @IBAction func upperHubStepper(_ sender: UIStepper) {
+        print(hangarAdd)
         upperHubLabel.text = String(Int(sender.value))
         lowerhubAdd = Int(lowerHubLabel.text!)!
         upperhubAdd = Int(upperHubLabel.text!)!*2
-        updateScore.text = String(lowerhubAdd + upperhubAdd)
-        if didSelect {
-            updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
-        }
-        else {
-            updateScore.text = String(lowerhubAdd + upperhubAdd)
-        }
+        updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
         global.endGameData["upperScore"] = upperHubLabel.text!
         global.endGameData["totalScore"] = updateScore.text!
     }
     @IBAction func lowerHubStepper(_ sender: UIStepper) {
+        print(hangarAdd)
         lowerHubLabel.text = String(Int(sender.value))
         lowerhubAdd = Int(lowerHubLabel.text!)!
         upperhubAdd = Int(upperHubLabel.text!)!*2
-        updateScore.text = String(lowerhubAdd + upperhubAdd)
-        if didSelect {
-            updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
-        }
-        else {
-            updateScore.text = String(lowerhubAdd + upperhubAdd)
-        }
+        updateScore.text = String(lowerhubAdd + upperhubAdd + hangarAdd)
         global.endGameData["lowerScore"] = lowerHubLabel.text!
         global.endGameData["totalScore"] = updateScore.text!
     }
