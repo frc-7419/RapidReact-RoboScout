@@ -136,7 +136,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="missedPressed:" destination="PQe-sR-wb0" eventType="touchUpInside" id="dmV-zZ-mnO"/>
-                                    <action selector="onSubmit:" destination="4IC-CD-2DX" eventType="touchUpInside" id="Jl5-6a-LSN"/>
                                 </connections>
                             </button>
                         </subviews>
