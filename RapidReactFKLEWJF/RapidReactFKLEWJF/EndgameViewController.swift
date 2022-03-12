@@ -10,6 +10,10 @@ class EndgameViewController: UIViewController {
     @IBOutlet weak var upperHubStepper: UIStepper!
     @IBOutlet weak var lowerHubStepper: UIStepper!
     
+    @IBAction func missedPressed(_ sender: Any) {
+        global.endGameData["missedShots"] = global.endGameData["missedShots"] as! Int + 1
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scoringBonus.isOn = Bool(String(describing: global.endGameData["scoringBonus"]!)) ?? false
