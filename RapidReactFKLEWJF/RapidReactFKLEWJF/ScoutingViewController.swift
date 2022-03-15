@@ -15,6 +15,11 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var teamNumberTextField: UITextField!
+    @IBOutlet weak var TeleopOutlet: UIButton!
+    @IBOutlet weak var AutonOutlet: UIButton!
+    @IBOutlet weak var ProblemsOutlet: UIButton!
+    @IBOutlet weak var EndgameOutlet: UIButton!
+    @IBOutlet weak var ResetOutlet: UIButton!
     
     @IBAction func teamNumberChanged(_ sender: Any) {
         global.scoutingData["teamNumber"] = teamNumberTextField.text!
@@ -39,6 +44,11 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 signInButton.isEnabled = false
                 submitButton.isEnabled = true
                 logoutButton.isEnabled = true
+                TeleopOutlet.isEnabled = true
+                AutonOutlet.isEnabled = true
+                EndgameOutlet.isEnabled = true
+                ProblemsOutlet.isEnabled = true
+                ResetOutlet.isEnabled = true
                 output.text =
                 """
                 Signed in!
@@ -52,6 +62,11 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 signInButton.isEnabled = true
                 submitButton.isEnabled = false
                 logoutButton.isEnabled = false
+                TeleopOutlet.isEnabled = false
+                AutonOutlet.isEnabled = false
+                EndgameOutlet.isEnabled = false
+                ProblemsOutlet.isEnabled = false
+                ResetOutlet.isEnabled = false
             }
         }
     }

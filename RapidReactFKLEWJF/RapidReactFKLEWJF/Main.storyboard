@@ -835,6 +835,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="55y-IH-5yT"/>
                     <connections>
+                        <outlet property="AutonOutlet" destination="s8S-DU-IMF" id="YMu-2e-aep"/>
+                        <outlet property="EndgameOutlet" destination="NxX-ip-Nqi" id="krd-SC-ZSq"/>
+                        <outlet property="ProblemsOutlet" destination="CzJ-ym-u72" id="CMM-Zy-YsI"/>
+                        <outlet property="ResetOutlet" destination="WIl-Zt-6nl" id="W0j-yn-mTY"/>
+                        <outlet property="TeleopOutlet" destination="Rcn-Ws-Vt2" id="qCA-Wu-fsF"/>
                         <outlet property="logoutButton" destination="DPm-qm-sbd" id="Oo1-uE-5vf"/>
                         <outlet property="output" destination="hjT-eL-ojp" id="yYG-dj-bCB"/>
                         <outlet property="signInButton" destination="cuq-DK-9pa" id="hRO-0E-gv7"/>
