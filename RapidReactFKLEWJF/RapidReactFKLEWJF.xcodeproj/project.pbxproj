@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E645E8427E2AEBA00807DAF /* RapidReactFKLEWJF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RapidReactFKLEWJF.entitlements; sourceTree = "<group>"; };
 		9EE08A7C27C349A500B78D80 /* RapidReactFKLEWJF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidReactFKLEWJF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE08A7F27C349A500B78D80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EE08A8127C349A500B78D80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +118,7 @@
 		9EE08A7E27C349A500B78D80 /* RapidReactFKLEWJF */ = {
 			isa = PBXGroup;
 			children = (
+				9E645E8427E2AEBA00807DAF /* RapidReactFKLEWJF.entitlements */,
 				9EE08A7F27C349A500B78D80 /* AppDelegate.swift */,
 				9EE08A8127C349A500B78D80 /* SceneDelegate.swift */,
 				9EE08AAF27C34A0100B78D80 /* Main.storyboard */,
@@ -468,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RapidReactFKLEWJF/RapidReactFKLEWJF.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -506,6 +509,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RapidReactFKLEWJF/RapidReactFKLEWJF.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
