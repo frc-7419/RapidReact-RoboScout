@@ -103,6 +103,20 @@ class AutonViewController: UIViewController {
             global.autonData["totalScore"] = String(Int(lowerLabel.text!)!*2 + Int(upperLabel.text!)!*4)
         }
     }
+    @IBAction func goToTeleop(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "teleop")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
+    @IBAction func goToHome(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "scoutingHome")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
     
     /*
     // MARK: - Navigation

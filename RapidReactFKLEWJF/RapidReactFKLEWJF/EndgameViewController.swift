@@ -125,6 +125,20 @@ class EndgameViewController: UIViewController {
         global.endGameData["lowerScore"] = lowerHubLabel.text!
         global.endGameData["totalScore"] = updateScore.text!
     }
+    @IBAction func goToTeleop(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "teleop")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
+    @IBAction func goToComments(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ProblemsTableView")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
     
     var endGameTotal = [""]
     
