@@ -118,23 +118,19 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-hm-Vlc">
-                                <rect key="frame" x="160.5" y="360" width="93" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="DhJ-Vb-WDX"/>
-                                    <constraint firstAttribute="height" constant="42" id="XHx-v1-4qm"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uC-DX-dck">
+                                <rect key="frame" x="125" y="629" width="165" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="MISS">
-                                    <backgroundConfiguration key="background" cornerRadius="4" strokeWidth="2">
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" red="0.1647058874" green="0.37647059560000001" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Endgame Page">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" red="0.92156863209999995" green="0.3058823645" blue="0.23921570180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="missedPressed:" destination="PQe-sR-wb0" eventType="touchUpInside" id="dmV-zZ-mnO"/>
+                                    <segue destination="f5I-7r-dBX" kind="show" id="Oyo-PN-q9o"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,7 +138,6 @@
                         <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="3LZ-hm-Vlc" firstAttribute="centerX" secondItem="KqI-IW-9jA" secondAttribute="centerX" id="Aea-Rw-r0c"/>
                             <constraint firstItem="DnL-RM-4cA" firstAttribute="top" secondItem="Trb-vP-RPO" secondAttribute="bottom" constant="105.5" id="Hsj-0d-Jyh"/>
                             <constraint firstItem="Z31-EW-heX" firstAttribute="top" secondItem="biX-zd-Ykj" secondAttribute="bottom" constant="90" id="LeP-ta-Nku"/>
                             <constraint firstItem="Trb-vP-RPO" firstAttribute="top" secondItem="KqI-IW-9jA" secondAttribute="top" constant="45" id="N4i-vY-E6X"/>
@@ -151,7 +146,6 @@
                             <constraint firstItem="Dfz-hT-9Nb" firstAttribute="leading" secondItem="KqI-IW-9jA" secondAttribute="leading" constant="60" id="d7d-NP-zVG"/>
                             <constraint firstItem="Trb-vP-RPO" firstAttribute="centerX" secondItem="KqI-IW-9jA" secondAttribute="centerX" id="hz4-W7-mbs"/>
                             <constraint firstItem="Dfz-hT-9Nb" firstAttribute="top" secondItem="PcN-y8-Ca6" secondAttribute="bottom" constant="90" id="lbj-lQ-Dpb"/>
-                            <constraint firstItem="3LZ-hm-Vlc" firstAttribute="top" secondItem="Trb-vP-RPO" secondAttribute="bottom" constant="232.5" id="niw-Hu-ggQ"/>
                             <constraint firstItem="DnL-RM-4cA" firstAttribute="centerX" secondItem="KqI-IW-9jA" secondAttribute="centerX" id="o4Z-EA-x6I"/>
                             <constraint firstItem="biX-zd-Ykj" firstAttribute="leading" secondItem="DnL-RM-4cA" secondAttribute="trailing" constant="27" id="t9p-Lh-0oB"/>
                             <constraint firstItem="DnL-RM-4cA" firstAttribute="leading" secondItem="PcN-y8-Ca6" secondAttribute="trailing" constant="34" id="vhM-Ay-4aQ"/>
@@ -304,32 +298,26 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNf-eX-WIp">
-                                <rect key="frame" x="160.5" y="435" width="93" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="93" id="AzE-ch-l0C"/>
-                                    <constraint firstAttribute="height" constant="42" id="SfD-bu-gdI"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-BV-nne">
+                                <rect key="frame" x="125" y="646" width="165" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="MISS">
-                                    <backgroundConfiguration key="background" cornerRadius="4" strokeWidth="2">
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" red="0.1647058874" green="0.37647059560000001" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Teleop Page">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" red="0.96862745289999996" green="0.8078432083" blue="0.27450981740000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="missedPressed:" destination="CkW-qP-Twi" eventType="touchUpInside" id="QkW-YJ-sym"/>
+                                    <segue destination="PQe-sR-wb0" kind="show" id="YkE-2o-jVq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ocm-HU-DLK"/>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="gNf-eX-WIp" firstAttribute="top" secondItem="eTW-ej-pHI" secondAttribute="bottom" constant="295" id="9Bj-es-21X"/>
                             <constraint firstItem="tGS-Pi-DB7" firstAttribute="top" secondItem="eTW-ej-pHI" secondAttribute="bottom" constant="169" id="EPA-a3-TRk"/>
-                            <constraint firstItem="gNf-eX-WIp" firstAttribute="centerX" secondItem="Ocm-HU-DLK" secondAttribute="centerX" id="F1z-Kg-f3x"/>
                             <constraint firstItem="RvV-6m-uCz" firstAttribute="top" secondItem="eTW-ej-pHI" secondAttribute="bottom" constant="47" id="KVn-gS-tok"/>
                             <constraint firstItem="nwE-h5-IM2" firstAttribute="leading" secondItem="tGS-Pi-DB7" secondAttribute="trailing" constant="36.5" id="LwA-6a-yYi"/>
                             <constraint firstItem="Bgm-PI-Hcd" firstAttribute="top" secondItem="Beb-iL-Ujy" secondAttribute="bottom" constant="80" id="PXy-L4-Oh8"/>
@@ -500,24 +488,19 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwu-hF-Csl">
-                                <rect key="frame" x="266" y="162" width="93" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="J3W-um-CeE"/>
-                                    <constraint firstAttribute="width" constant="93" id="YG5-wO-iXM"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lit-iT-5wS">
+                                <rect key="frame" x="123" y="678" width="169" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="MISS">
-                                    <backgroundConfiguration key="background" cornerRadius="4" strokeWidth="2">
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" red="0.1647058874" green="0.37647059560000001" blue="0.77254903320000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Comments Page">
+                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="23"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="missedPressed:" destination="f5I-7r-dBX" eventType="touchUpInside" id="JVv-31-dR6"/>
-                                    <action selector="onSubmit:" destination="4IC-CD-2DX" eventType="touchUpInside" id="rFL-sD-cyX"/>
+                                    <segue destination="nzX-k4-LLm" kind="show" id="qIF-xp-YZv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -527,7 +510,6 @@
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="centerX" secondItem="i5E-cm-OeJ" secondAttribute="centerX" id="3oe-Ka-W2c"/>
                             <constraint firstItem="8Qs-Iy-gJL" firstAttribute="top" secondItem="jCY-Tk-CpB" secondAttribute="bottom" constant="60" id="5sd-qs-P79"/>
                             <constraint firstItem="d7I-MM-ghY" firstAttribute="leading" secondItem="yNn-pq-9q6" secondAttribute="trailing" constant="15" id="6Lg-vO-CCr"/>
-                            <constraint firstItem="zwu-hF-Csl" firstAttribute="leading" secondItem="ykV-jl-iCB" secondAttribute="trailing" constant="54" id="6gJ-02-Xf1"/>
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="top" secondItem="5kD-FO-7RN" secondAttribute="top" constant="45" id="7h4-YY-Dsk"/>
                             <constraint firstItem="8Qs-Iy-gJL" firstAttribute="leading" secondItem="5kD-FO-7RN" secondAttribute="leading" constant="17.5" id="AAq-A1-eQX"/>
                             <constraint firstItem="Efp-bn-M8F" firstAttribute="top" secondItem="RCH-qU-4Tz" secondAttribute="bottom" constant="32" id="DeP-X8-9fe"/>
@@ -544,7 +526,6 @@
                             <constraint firstItem="5kD-FO-7RN" firstAttribute="trailing" secondItem="o1o-dU-m2W" secondAttribute="trailing" constant="31" id="Ve3-OP-kc3"/>
                             <constraint firstItem="vqC-Kd-AgZ" firstAttribute="top" secondItem="8Qs-Iy-gJL" secondAttribute="bottom" constant="15" id="YUn-si-9Km"/>
                             <constraint firstItem="P8B-Lm-Okc" firstAttribute="leading" secondItem="Efp-bn-M8F" secondAttribute="trailing" constant="3" id="a1h-Xb-EDN"/>
-                            <constraint firstItem="zwu-hF-Csl" firstAttribute="top" secondItem="jCY-Tk-CpB" secondAttribute="bottom" constant="34.5" id="bI3-WQ-yvj"/>
                             <constraint firstItem="5kD-FO-7RN" firstAttribute="trailing" secondItem="0fT-AV-0o6" secondAttribute="trailing" constant="25.5" id="doP-V8-trI"/>
                             <constraint firstItem="nxF-XN-Wek" firstAttribute="leading" secondItem="5kD-FO-7RN" secondAttribute="leading" constant="17.5" id="eD5-gT-IiT"/>
                             <constraint firstItem="1pv-xl-PYm" firstAttribute="top" secondItem="nxF-XN-Wek" secondAttribute="bottom" constant="35" id="h1S-SD-JWt"/>
@@ -809,20 +790,6 @@
                                     <constraint firstItem="CzJ-ym-u72" firstAttribute="top" secondItem="Rcn-Ws-Vt2" secondAttribute="bottom" constant="8" symbolic="YES" id="yWi-aQ-R5x"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ji-5G-l0G">
-                                <rect key="frame" x="177" y="745" width="91" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.41176470590000003" green="0.62745098040000002" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="signInWithApple:" destination="4IC-CD-2DX" eventType="touchUpInside" id="aXp-tf-gWh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p5m-kS-dy7"/>
                         <color key="backgroundColor" red="0.0042997307954895422" green="0.006587767849915745" blue="0.01389336340206182" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -980,6 +947,11 @@
             <point key="canvasLocation" x="1645" y="759"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qIF-xp-YZv"/>
+        <segue reference="Oyo-PN-q9o"/>
+        <segue reference="YkE-2o-jVq"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
