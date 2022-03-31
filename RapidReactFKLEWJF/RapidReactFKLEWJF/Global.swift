@@ -48,7 +48,13 @@ class Global {
         
         let totalMissed: Int = (autonData["missedShots"] as! Int) + (teleOpData["missedShots"] as! Int) + (endGameData["missedShots"] as! Int)
         let totalMissedArray: [String] = [String(describing: totalMissed)]
-
-        return scoutingArray + autonArray + teleOpArray + endGameArray + totalMissedArray + problemsArray;
+        var totalArray: [String] = []
+        totalArray.append(contentsOf: scoutingArray)
+        totalArray.append(contentsOf: autonArray)
+        totalArray.append(contentsOf: teleOpArray)
+        totalArray.append(contentsOf: endGameArray)
+        totalArray.append(contentsOf: totalMissedArray)
+        totalArray.append(contentsOf: problemsArray)
+        return totalArray
     }
 }

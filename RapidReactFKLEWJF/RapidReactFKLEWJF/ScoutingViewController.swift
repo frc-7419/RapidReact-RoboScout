@@ -25,17 +25,6 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     @IBAction func teamNumberChanged(_ sender: Any) {
         global.scoutingData["teamNumber"] = teamNumberTextField.text!
     }
-    
-    
-    @IBAction func signInWithApple(_ sender: UIButton) {
-        let appleIDProvider = ASAuthorizationAppleIDProvider()
-        let request = appleIDProvider.createRequest()
-        request.requestedScopes = [.fullName, .email]
-        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
-        authorizationController.delegate = self
-        authorizationController.performRequests()
-    }
-    
 
     
     override func viewDidLoad() {
@@ -174,18 +163,4 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     }
     */
 
-}
-
-extension ScoutingViewController: ASAuthorizationControllerDelegate {
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
-        if let appleIDCredential = authorization.credential as? ASAuthorizationCredential {
-            let userIdentifier = appleIDCredential.user
-            let fullName = appleIDCredential.fullName
-            let email = appleIDCredential.email
-        }
-    }
-    
-    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        print(error.localizedDescription)
-    }
 }
