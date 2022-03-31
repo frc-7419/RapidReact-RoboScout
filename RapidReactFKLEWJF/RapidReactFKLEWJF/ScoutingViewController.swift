@@ -108,6 +108,23 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
+        global.teleOpData["totalScore"] = 0
+        global.teleOpData["lowerScore"] = 0
+        global.teleOpData["upperScore"] = 0
+        global.teleOpData["missedShots"] = 0
+        global.autonData["didMoveOff"] = false
+        global.autonData["lowerScore"] = 0
+        global.autonData["upperScore"] = 0
+        global.autonData["totalScore"] = 0
+        global.autonData["missedShots"] = 0
+        global.endGameData["lowerScore"] = 0
+        global.endGameData["upperScore"] = 0
+        global.endGameData["totalScore"] = 0
+        global.endGameData["hangar"] = "none"
+        global.endGameData["scoringBonus"] = false
+        global.endGameData["hangarBonus"] = false
+        global.endGameData["missedShots"] = 0
+        global.problemCells = []
         
     }
     
