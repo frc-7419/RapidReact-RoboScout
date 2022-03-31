@@ -12,6 +12,9 @@ class AutonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lowerHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
+        upperHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
 
         // Do any additional setup after loading the view.
 //        updateScore.text = "0"

@@ -16,6 +16,10 @@ class EndgameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lowerHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
+        upperHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
+        
         scoringBonus.isOn = Bool(String(describing: global.endGameData["scoringBonus"]!)) ?? false
         hangarBonus.isOn = Bool(String(describing: global.endGameData["hangarBonus"]!)) ?? false
         // Do any additional setup after loading the view.
