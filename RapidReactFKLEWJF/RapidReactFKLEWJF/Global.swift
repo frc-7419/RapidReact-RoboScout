@@ -8,13 +8,11 @@ class Global {
         "lowerScore": 0,
         "upperScore": 0,
         "totalScore": 0,
-        "missedShots": 0
     ]
     var teleOpData: [String: Any] = [
         "upperScore": 0,
         "lowerScore": 0,
         "totalScore": 0,
-        "missedShots": 0
     ]
     var endGameData: [String: Any] = [
         "lowerScore": 0,
@@ -23,7 +21,6 @@ class Global {
         "scoringBonus": false,
         "hangarBonus": false,
         "totalScore": 0,
-        "missedShots": 0
     ]
     
     var scoutingData: [String: Any] = [
@@ -45,16 +42,13 @@ class Global {
         let autonArray: [String] = [String(describing: autonData["didMoveOff"]!), String(describing: autonData["lowerScore"]!), String(describing: autonData["upperScore"]!), String(describing: autonData["totalScore"]!)]
         let teleOpArray: [String] = [String(describing: teleOpData["lowerScore"]!), String(describing: teleOpData["upperScore"]!), String(describing: teleOpData["totalScore"]!)]
         let endGameArray: [String] = [String(describing: endGameData["lowerScore"]!), String(describing: endGameData["upperScore"]!), String(describing: endGameData["hangar"]!), String(describing: endGameData["scoringBonus"]!), String(describing: endGameData["hangarBonus"]!), String(describing: endGameData["totalScore"]!)]
-        
-        let totalMissed: Int = (autonData["missedShots"] as! Int) + (teleOpData["missedShots"] as! Int) + (endGameData["missedShots"] as! Int)
-        let totalMissedArray: [String] = [String(describing: totalMissed)]
-        var totalArray: [String] = []
-        totalArray.append(contentsOf: scoutingArray)
-        totalArray.append(contentsOf: autonArray)
-        totalArray.append(contentsOf: teleOpArray)
-        totalArray.append(contentsOf: endGameArray)
-        totalArray.append(contentsOf: totalMissedArray)
-        totalArray.append(contentsOf: problemsArray)
-        return totalArray
+//        var totalArray: [String] = []
+//        totalArray.append(contentsOf: scoutingArray)
+//        totalArray.append(contentsOf: autonArray)
+//        totalArray.append(contentsOf: teleOpArray)
+//        totalArray.append(contentsOf: endGameArray)
+//        totalArray.append(contentsOf: problemsArray)
+//        return totalArray
+        return scoutingArray + autonArray + teleOpArray + endGameArray + problemsArray
     }
 }

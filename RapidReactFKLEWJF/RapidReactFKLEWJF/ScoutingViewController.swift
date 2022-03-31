@@ -37,7 +37,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
          changing. This way the UI will update immediately and the isEnabled property will be toggled in one place.
          */
         
-        teamNumberTextField.text = String(describing: global.scoutingData["teamNumber"]!) ?? " "
+        teamNumberTextField.text = String(describing: global.scoutingData["teamNumber"]!) ?? ""
         
         signedInSubscription = UIApplication.appDelegate
                     .$signedInUser
@@ -96,7 +96,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
             
             output.text = "Appending data..."
             let spreadsheetId = "1_3wMHPrS2Wv_cfSmCq53yKdpecHgc8tyy71nwGv4jnk"
-            let range = "A2:AA"
+            let range = "A1:AA"
             let rangeToAppend = GTLRSheets_ValueRange.init();
             rangeToAppend.values = [global.getTotalArray()]
             let query = GTLRSheetsQuery_SpreadsheetsValuesAppend.query(withObject: rangeToAppend, spreadsheetId: spreadsheetId, range: range)
@@ -111,23 +111,6 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
-        global.teleOpData["totalScore"] = 0
-        global.teleOpData["lowerScore"] = 0
-        global.teleOpData["upperScore"] = 0
-        global.teleOpData["missedShots"] = 0
-        global.autonData["didMoveOff"] = false
-        global.autonData["lowerScore"] = 0
-        global.autonData["upperScore"] = 0
-        global.autonData["totalScore"] = 0
-        global.autonData["missedShots"] = 0
-        global.endGameData["lowerScore"] = 0
-        global.endGameData["upperScore"] = 0
-        global.endGameData["totalScore"] = 0
-        global.endGameData["hangar"] = "none"
-        global.endGameData["scoringBonus"] = false
-        global.endGameData["hangarBonus"] = false
-        global.endGameData["missedShots"] = 0
-        global.problemCells = []
         
     }
     

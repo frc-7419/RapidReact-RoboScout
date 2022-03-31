@@ -5,10 +5,6 @@ class TeleOpViewController: UIViewController {
     var totalScore = 0
     var lowerhubAdd = 0
     var upperhubAdd = 0
-    
-    @IBAction func missedPressed(_ sender: Any) {
-        global.teleOpData["missedShots"] = global.teleOpData["missedShots"] as! Int + 1
-    }
 
     @IBOutlet weak var updateScore: UILabel!
     @IBOutlet weak var lowerHubStepper: UIStepper!

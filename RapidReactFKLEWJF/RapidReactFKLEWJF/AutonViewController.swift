@@ -9,9 +9,7 @@ class AutonViewController: UIViewController {
     @IBOutlet weak var lowerHubStepper: UIStepper!
     @IBOutlet weak var upperHubStepper: UIStepper!
     
-    @IBAction func missedPressed(_ sender: Any) {
-        global.autonData["missedShots"] = global.autonData["missedShots"] as! Int + 1
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
