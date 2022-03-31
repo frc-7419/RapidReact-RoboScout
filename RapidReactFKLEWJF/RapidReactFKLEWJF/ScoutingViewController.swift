@@ -36,6 +36,9 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
          Here we use Combine in order to react in real-time to the signed in user stored in the AppDelegate
          changing. This way the UI will update immediately and the isEnabled property will be toggled in one place.
          */
+        
+        teamNumberTextField.text = String(describing: global.scoutingData["teamNumber"]!) ?? " "
+        
         signedInSubscription = UIApplication.appDelegate
                     .$signedInUser
                     .receive(on: DispatchQueue.main)

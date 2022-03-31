@@ -724,6 +724,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="onSubmit:" destination="4IC-CD-2DX" eventType="touchUpInside" id="UMX-4N-MmS"/>
+                                            <segue destination="0SI-MN-yeI" kind="show" id="KZX-CN-q8O"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -883,6 +884,58 @@
             </objects>
             <point key="canvasLocation" x="1644.9275362318842" y="79.6875"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0LR-T5-FJC">
+            <objects>
+                <viewController id="0SI-MN-yeI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x5o-aE-ge3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="J8c-oc-aUW">
+                                <rect key="frame" x="45.5" y="207" width="323" height="428"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dN6-aj-8lu">
+                                <rect key="frame" x="173" y="449" width="70" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6s-26-HnV">
+                                <rect key="frame" x="173" y="529" width="69" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you would like to submit this data?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jF1-bM-iFW">
+                                <rect key="frame" x="64" y="306" width="287" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p4l-l2-4MU"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p4l-l2-4MU" firstAttribute="trailing" secondItem="dN6-aj-8lu" secondAttribute="trailing" constant="171" id="0EU-Fn-jab"/>
+                            <constraint firstItem="H6s-26-HnV" firstAttribute="leading" secondItem="p4l-l2-4MU" secondAttribute="leading" constant="173" id="DE3-dE-Z0b"/>
+                            <constraint firstItem="dN6-aj-8lu" firstAttribute="top" secondItem="jF1-bM-iFW" secondAttribute="bottom" constant="102" id="DjM-2J-obz"/>
+                            <constraint firstItem="J8c-oc-aUW" firstAttribute="centerY" secondItem="x5o-aE-ge3" secondAttribute="centerY" id="EMw-lR-6Oz"/>
+                            <constraint firstItem="dN6-aj-8lu" firstAttribute="leading" secondItem="p4l-l2-4MU" secondAttribute="leading" constant="173" id="IWP-RM-1HS"/>
+                            <constraint firstItem="p4l-l2-4MU" firstAttribute="trailing" secondItem="jF1-bM-iFW" secondAttribute="trailing" constant="63" id="OFs-EB-s8v"/>
+                            <constraint firstItem="J8c-oc-aUW" firstAttribute="width" secondItem="x5o-aE-ge3" secondAttribute="width" multiplier="0.77971" id="UT0-Qe-Zdi"/>
+                            <constraint firstItem="J8c-oc-aUW" firstAttribute="height" secondItem="x5o-aE-ge3" secondAttribute="height" multiplier="0.508036" id="Yo8-JY-q3k"/>
+                            <constraint firstItem="H6s-26-HnV" firstAttribute="top" secondItem="dN6-aj-8lu" secondAttribute="bottom" constant="49" id="c84-Fu-W1f"/>
+                            <constraint firstItem="jF1-bM-iFW" firstAttribute="leading" secondItem="p4l-l2-4MU" secondAttribute="leading" constant="64" id="cw8-Yl-zKE"/>
+                            <constraint firstItem="J8c-oc-aUW" firstAttribute="centerX" secondItem="x5o-aE-ge3" secondAttribute="centerX" id="gFS-Fy-ygj"/>
+                            <constraint firstItem="jF1-bM-iFW" firstAttribute="top" secondItem="p4l-l2-4MU" secondAttribute="top" constant="262" id="joY-Gx-0ZP"/>
+                            <constraint firstItem="p4l-l2-4MU" firstAttribute="trailing" secondItem="H6s-26-HnV" secondAttribute="trailing" constant="172" id="rJI-TW-7sJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ojr-gY-kX2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuE-H5-amx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2324.6376811594205" y="84.375"/>
+        </scene>
         <!--Problems Table View Controller-->
         <scene sceneID="2Cy-BK-Sca">
             <objects>
@@ -1014,6 +1067,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Rectangle" width="327" height="413"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
