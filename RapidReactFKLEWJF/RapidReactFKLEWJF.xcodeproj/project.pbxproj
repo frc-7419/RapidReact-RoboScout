@@ -19,7 +19,7 @@
 		9EE08AB827C34A1200B78D80 /* AutonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB227C34A1100B78D80 /* AutonViewController.swift */; };
 		9EE08AB927C34A1200B78D80 /* EndgameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB327C34A1200B78D80 /* EndgameViewController.swift */; };
 		9EE08ABA27C34A1200B78D80 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB427C34A1200B78D80 /* Global.swift */; };
-		9EE08ABB27C34A1200B78D80 /* ProblemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB527C34A1200B78D80 /* ProblemsTableViewController.swift */; };
+		9EE08ABB27C34A1200B78D80 /* ProblemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB527C34A1200B78D80 /* ProblemsViewController.swift */; };
 		9EE08ABC27C34A1200B78D80 /* TeleOpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */; };
 		9EFC7BD727C4275D00F049DB /* GoogleAPIClientForRESTCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BD627C4275D00F049DB /* GoogleAPIClientForRESTCore */; };
 		9EFC7BD927C4275D00F049DB /* GoogleAPIClientForREST_Sheets in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BD827C4275D00F049DB /* GoogleAPIClientForREST_Sheets */; };
@@ -62,7 +62,7 @@
 		9EE08AB227C34A1100B78D80 /* AutonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutonViewController.swift; sourceTree = "<group>"; };
 		9EE08AB327C34A1200B78D80 /* EndgameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndgameViewController.swift; sourceTree = "<group>"; };
 		9EE08AB427C34A1200B78D80 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		9EE08AB527C34A1200B78D80 /* ProblemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemsTableViewController.swift; sourceTree = "<group>"; };
+		9EE08AB527C34A1200B78D80 /* ProblemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemsViewController.swift; sourceTree = "<group>"; };
 		9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeleOpViewController.swift; sourceTree = "<group>"; };
 		9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +126,7 @@
 				9EE08AB227C34A1100B78D80 /* AutonViewController.swift */,
 				9EE08AB327C34A1200B78D80 /* EndgameViewController.swift */,
 				9EE08AB427C34A1200B78D80 /* Global.swift */,
-				9EE08AB527C34A1200B78D80 /* ProblemsTableViewController.swift */,
+				9EE08AB527C34A1200B78D80 /* ProblemsViewController.swift */,
 				9EE08AB127C34A1100B78D80 /* ScoutingViewController.swift */,
 				9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */,
 				9EE08A8A27C349A700B78D80 /* LaunchScreen.storyboard */,
@@ -299,7 +299,7 @@
 				9EE08A8027C349A500B78D80 /* AppDelegate.swift in Sources */,
 				9EE08AB727C34A1200B78D80 /* ScoutingViewController.swift in Sources */,
 				9EE08AB927C34A1200B78D80 /* EndgameViewController.swift in Sources */,
-				9EE08ABB27C34A1200B78D80 /* ProblemsTableViewController.swift in Sources */,
+				9EE08ABB27C34A1200B78D80 /* ProblemsViewController.swift in Sources */,
 				9EE08A8227C349A500B78D80 /* SceneDelegate.swift in Sources */,
 				9EE08ABA27C34A1200B78D80 /* Global.swift in Sources */,
 			);

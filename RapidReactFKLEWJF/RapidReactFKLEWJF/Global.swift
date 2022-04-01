@@ -27,28 +27,18 @@ class Global {
         "teamNumber": 0
     ]
     
-    var problemCells: [ProblemTableViewCell] = []
-
+    var commentsAutonData = ""
+    var commentsTeleopData = ""
+    var commentsEndgameData = ""
+    
     func getTotalArray() -> [Any] {
-        var problemsArray: [String] = []
-        for problem in problemCells {
-            if (problem.data["problem"] != "") {
-                problemsArray.append(problem.data["problem"]!)
-                problemsArray.append(problem.data["section"]!)
-            }
-        }
+
         
         let scoutingArray: [String] = [String(describing: scoutingData["teamNumber"]!)]
         let autonArray: [String] = [String(describing: autonData["didMoveOff"]!), String(describing: autonData["lowerScore"]!), String(describing: autonData["upperScore"]!), String(describing: autonData["totalScore"]!)]
         let teleOpArray: [String] = [String(describing: teleOpData["lowerScore"]!), String(describing: teleOpData["upperScore"]!), String(describing: teleOpData["totalScore"]!)]
         let endGameArray: [String] = [String(describing: endGameData["lowerScore"]!), String(describing: endGameData["upperScore"]!), String(describing: endGameData["hangar"]!), String(describing: endGameData["scoringBonus"]!), String(describing: endGameData["hangarBonus"]!), String(describing: endGameData["totalScore"]!)]
-//        var totalArray: [String] = []
-//        totalArray.append(contentsOf: scoutingArray)
-//        totalArray.append(contentsOf: autonArray)
-//        totalArray.append(contentsOf: teleOpArray)
-//        totalArray.append(contentsOf: endGameArray)
-//        totalArray.append(contentsOf: problemsArray)
-//        return totalArray
-        return scoutingArray + autonArray + teleOpArray + endGameArray + problemsArray
+        let commmentsArray: [String] = [commentsAutonData, commentsTeleopData, commentsEndgameData]
+        return scoutingArray + autonArray + teleOpArray + endGameArray + commmentsArray
     }
 }
