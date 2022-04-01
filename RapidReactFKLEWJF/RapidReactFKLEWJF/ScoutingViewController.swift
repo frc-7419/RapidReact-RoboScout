@@ -30,12 +30,8 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.teamNumberTextField.delegate = self
-        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        /*
-         Here we use Combine in order to react in real-time to the signed in user stored in the AppDelegate
-         changing. This way the UI will update immediately and the isEnabled property will be toggled in one place.
-         */
         
         teamNumberTextField.text = String(describing: global.scoutingData["teamNumber"]!) ?? ""
         
@@ -169,7 +165,9 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         present(vc, animated: true)
     }
     
-    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     
     // Helper for showing an alert
