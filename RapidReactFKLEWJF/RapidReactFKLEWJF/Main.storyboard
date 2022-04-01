@@ -430,6 +430,16 @@
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(18/20+ Alliance Cargo)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvp-yZ-ChP">
+                                <rect key="frame" x="15" y="430" width="112" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="3t9-po-3WD"/>
+                                    <constraint firstAttribute="height" constant="12" id="oIS-dq-Lk8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanger Bonus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCH-qU-4Tz">
                                 <rect key="frame" x="18" y="467" width="139" height="28"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
@@ -550,12 +560,24 @@
                                 <color key="textColor" red="0.72907514299999998" green="0.9309725888" blue="0.92736135679999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(16+ Alliance Hangar Pts)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwR-xO-tua">
+                                <rect key="frame" x="15" y="498" width="121" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Wc8-ae-Oga"/>
+                                    <constraint firstAttribute="width" constant="121" id="yk6-ZR-TsK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5kD-FO-7RN"/>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.14117647058823529" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="P8B-Lm-Okc" firstAttribute="top" secondItem="RCH-qU-4Tz" secondAttribute="bottom" constant="46" id="0yE-Rh-mGr"/>
+                            <constraint firstItem="Gvp-yZ-ChP" firstAttribute="leading" secondItem="5kD-FO-7RN" secondAttribute="leading" constant="15" id="2Xp-ga-qjl"/>
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="centerX" secondItem="i5E-cm-OeJ" secondAttribute="centerX" id="3oe-Ka-W2c"/>
+                            <constraint firstItem="Gvp-yZ-ChP" firstAttribute="top" secondItem="PgN-32-Pqh" secondAttribute="bottom" constant="3" id="3os-VY-N2i"/>
                             <constraint firstItem="8Qs-Iy-gJL" firstAttribute="top" secondItem="jCY-Tk-CpB" secondAttribute="bottom" constant="60" id="5sd-qs-P79"/>
                             <constraint firstItem="RCH-qU-4Tz" firstAttribute="top" secondItem="PgN-32-Pqh" secondAttribute="bottom" constant="40" id="6RU-Js-A8S"/>
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="top" secondItem="5kD-FO-7RN" secondAttribute="top" constant="45" id="7h4-YY-Dsk"/>
@@ -573,6 +595,7 @@
                             <constraint firstItem="yNn-pq-9q6" firstAttribute="top" secondItem="vqC-Kd-AgZ" secondAttribute="bottom" constant="54" id="N6T-8J-Dso"/>
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="centerX" secondItem="i5E-cm-OeJ" secondAttribute="centerX" id="P8p-JN-RDi"/>
                             <constraint firstItem="1pv-xl-PYm" firstAttribute="leading" secondItem="5kD-FO-7RN" secondAttribute="leading" constant="18" id="TPv-MN-ElA"/>
+                            <constraint firstItem="SwR-xO-tua" firstAttribute="leading" secondItem="5kD-FO-7RN" secondAttribute="leading" constant="15" id="TjW-E4-flf"/>
                             <constraint firstItem="jCY-Tk-CpB" firstAttribute="centerX" secondItem="i5E-cm-OeJ" secondAttribute="centerX" id="UQj-8p-d8q"/>
                             <constraint firstItem="nxF-XN-Wek" firstAttribute="leading" secondItem="5kD-FO-7RN" secondAttribute="leading" constant="18" id="UW9-3k-hUH"/>
                             <constraint firstItem="5kD-FO-7RN" firstAttribute="trailing" secondItem="tYJ-kD-equ" secondAttribute="trailing" constant="31" id="VRU-Qz-EPD"/>
@@ -591,6 +614,7 @@
                             <constraint firstItem="5kD-FO-7RN" firstAttribute="trailing" secondItem="vqC-Kd-AgZ" secondAttribute="trailing" constant="15" id="pqN-Ij-gqy"/>
                             <constraint firstItem="ykV-jl-iCB" firstAttribute="leading" secondItem="8Qs-Iy-gJL" secondAttribute="trailing" constant="-55" id="rDV-s9-0zg"/>
                             <constraint firstItem="ykV-jl-iCB" firstAttribute="centerX" secondItem="5kD-FO-7RN" secondAttribute="centerX" id="tZL-Sd-BiH"/>
+                            <constraint firstItem="SwR-xO-tua" firstAttribute="top" secondItem="RCH-qU-4Tz" secondAttribute="bottom" constant="3" id="taQ-Ut-IIq"/>
                             <constraint firstItem="5kD-FO-7RN" firstAttribute="trailing" secondItem="o1o-dU-m2W" secondAttribute="trailing" constant="31" id="wR6-TD-Rev"/>
                             <constraint firstItem="1pv-xl-PYm" firstAttribute="top" secondItem="nxF-XN-Wek" secondAttribute="bottom" constant="35" id="wxh-lW-PEd"/>
                             <constraint firstItem="0fT-AV-0o6" firstAttribute="top" secondItem="d7I-MM-ghY" secondAttribute="bottom" constant="35" id="yUt-6x-4mK"/>
