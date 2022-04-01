@@ -247,6 +247,10 @@
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1nF-Wk-dcf">
                                         <rect key="frame" x="12" y="102" width="94" height="32"/>
                                         <color key="backgroundColor" red="0.64313725490196072" green="0.8784313725490196" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="94" id="06e-hm-I4f"/>
+                                            <constraint firstAttribute="height" constant="32" id="WW6-1b-YpU"/>
+                                        </constraints>
                                         <color key="tintColor" red="0.64313725489999995" green="0.87843137250000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="clickedLowerHubStepper:" destination="CkW-qP-Twi" eventType="valueChanged" id="1xy-S8-MJa"/>
@@ -258,7 +262,6 @@
                                     <constraint firstAttribute="width" constant="118" id="fxo-eh-hWP"/>
                                     <constraint firstItem="CY9-eA-G42" firstAttribute="leading" secondItem="Beb-iL-Ujy" secondAttribute="leading" constant="7" id="h6V-Cs-XyH"/>
                                     <constraint firstAttribute="height" constant="134" id="tvQ-wQ-AaP"/>
-                                    <constraint firstItem="1nF-Wk-dcf" firstAttribute="leading" secondItem="Beb-iL-Ujy" secondAttribute="leading" constant="12" id="x7a-RK-ySf"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nwE-h5-IM2">
@@ -660,7 +663,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-Ot-ZCP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Vyz-Ot-ZCP">
                                 <rect key="frame" x="232" y="156" width="122" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="4Ij-zf-KAk"/>
