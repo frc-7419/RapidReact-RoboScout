@@ -39,7 +39,7 @@ class ProblemsTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
     
@@ -56,6 +56,10 @@ class ProblemsTableViewController: UIViewController {
         let vc = storyboard.instantiateViewController(identifier: "endgame")
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 
