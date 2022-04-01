@@ -103,7 +103,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 if let error = error {
                     self.showAlert(title: "Error", message: error.localizedDescription)
                 } else {
-                    self.output.text = "Success!"
+                    self.output.text = "Success! Teri Ma!"
                 }
             }
         }
