@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 let global: Global = Global()
 
