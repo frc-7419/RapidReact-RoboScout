@@ -24,7 +24,7 @@ class Global {
     ]
     
     var scoutingData: [String: Any] = [
-        "teamNumber": 0
+        "teamNumber": ""
     ]
     
     var commentsAutonData = ""
