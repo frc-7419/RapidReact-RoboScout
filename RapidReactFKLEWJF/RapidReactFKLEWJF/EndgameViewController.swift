@@ -8,7 +8,10 @@ class EndgameViewController: UIViewController {
     @IBOutlet weak var scoringBonus: UISwitch!
     @IBOutlet weak var hangarBonus: UISwitch!
     @IBOutlet weak var upperHubStepper: UIStepper!
+    @IBOutlet weak var secondsPassedLabel: UILabel!
     @IBOutlet weak var lowerHubStepper: UIStepper!
+    @IBOutlet weak var startTimerOutlet: UIButton!
+    @IBOutlet weak var stopTimerOutlet: UIButton!
     
     @IBAction func missedPressed(_ sender: Any) {
         global.endGameData["missedShots"] = global.endGameData["missedShots"] as! Int + 1
@@ -50,7 +53,7 @@ class EndgameViewController: UIViewController {
         upperHubLabel.text = String(describing: global.endGameData["upperScore"]!)
         lowerHubStepper.value = Double(String(describing: global.endGameData["lowerScore"]!)) ?? 0.0
         upperHubStepper.value = Double(String(describing: global.endGameData["upperScore"]!)) ?? 0.0
-        
+        secondsPassedLabel.text = String(describing: global.endGameData["timeToHang"]!)
     }
     var totalScore = 0
     var lowerhubAdd = 0
@@ -59,6 +62,9 @@ class EndgameViewController: UIViewController {
     var hangarAdd = 0
     var scoringBonusSelected = false
     var hangarBonusSelected = false
+    var timer = Timer()
+    var secondsPassed = 0
+    var didStopTimer = false
     @IBAction func hangarLevel(_ sender: UISegmentedControl) {
         switch sender.selectedSegmentIndex {
             case 0:
@@ -110,6 +116,25 @@ class EndgameViewController: UIViewController {
         global.endGameData["totalScore"] = updateScore.text!
     }
     
+    @IBAction func hangerTimerStopped(_ sender: UIButton) {
+        didStopTimer = true
+        global.endGameData["timeToHang"] = secondsPassedLabel.text!
+    }
+    
+    @IBAction func hangerTimer(_ sender: UIButton) {
+        timer.invalidate()
+        didStopTimer = false
+        secondsPassed = 0
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        
+    }
+    
+    @objc func updateTimer() {
+        if (!didStopTimer) {
+            secondsPassed += 1
+            secondsPassedLabel.text = String(secondsPassed)
+        }
+    }
     
     @IBAction func upperHubStepper(_ sender: UIStepper) {
         print(hangarAdd)
@@ -120,6 +145,7 @@ class EndgameViewController: UIViewController {
         global.endGameData["upperScore"] = upperHubLabel.text!
         global.endGameData["totalScore"] = updateScore.text!
     }
+    
     @IBAction func lowerHubStepper(_ sender: UIStepper) {
         print(hangarAdd)
         lowerHubLabel.text = String(Int(sender.value))
@@ -129,6 +155,7 @@ class EndgameViewController: UIViewController {
         global.endGameData["lowerScore"] = lowerHubLabel.text!
         global.endGameData["totalScore"] = updateScore.text!
     }
+    
     @IBAction func goToTeleop(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(identifier: "teleop")

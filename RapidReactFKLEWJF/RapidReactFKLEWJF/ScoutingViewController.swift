@@ -143,6 +143,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         global.commentsAutonData = ""
         global.commentsTeleopData = ""
         global.commentsEndgameData = ""
+        global.endGameData["timeToHang"] = 0
     }
     
     
