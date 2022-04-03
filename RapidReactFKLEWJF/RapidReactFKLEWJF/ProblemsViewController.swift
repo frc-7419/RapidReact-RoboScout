@@ -23,6 +23,9 @@ class ProblemTableViewCell: UITableViewCell {
 
 class ProblemsTableViewController: UIViewController {
     
+    @IBOutlet weak var endgameOutlet: UITextField!
+    @IBOutlet weak var teleopOutlet: UITextField!
+    @IBOutlet weak var autonOutlet: UITextField!
     @IBAction func autonFieldChanged(_ sender: UITextField) {
         global.commentsAutonData = sender.text!
     }
@@ -41,6 +44,9 @@ class ProblemsTableViewController: UIViewController {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        autonOutlet.text = global.commentsAutonData
+        teleopOutlet.text = global.commentsTeleopData
+        endgameOutlet.text = global.commentsEndgameData
     }
     
     @IBAction func goToHome(_ sender: UIButton) {

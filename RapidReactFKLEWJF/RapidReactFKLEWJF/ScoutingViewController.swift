@@ -111,6 +111,8 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onReset(_ sender: UIButton) {
+        global.scoutingData["teamNumber"] = ""
+        teamNumberTextField.text = ""
         global.teleOpData["totalScore"] = 0
         global.teleOpData["lowerScore"] = 0
         global.teleOpData["upperScore"] = 0
