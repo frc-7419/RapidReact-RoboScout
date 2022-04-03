@@ -21,19 +21,27 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var ProblemsOutlet: UIButton!
     @IBOutlet weak var EndgameOutlet: UIButton!
     @IBOutlet weak var ResetOutlet: UIButton!
+    @IBOutlet weak var scouterNameTextField: UITextField!
     
     @IBAction func teamNumberChanged(_ sender: Any) {
         global.scoutingData["teamNumber"] = teamNumberTextField.text!
     }
+    
+    @IBAction func scouterNameChanged(_ sender: Any) {
+        global.scoutingData["scouterName"] = scouterNameTextField.text!
+    }
+    
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.teamNumberTextField.delegate = self
+        self.scouterNameTextField.delegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
         teamNumberTextField.text = String(describing: global.scoutingData["teamNumber"]!) ?? ""
+        scouterNameTextField.text = String(describing: global.scoutingData["scouterName"]!) ?? ""
         
         signedInSubscription = UIApplication.appDelegate
                     .$signedInUser
@@ -72,6 +80,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return teamNumberTextField.resignFirstResponder()
+        return scouterNameTextField.resignFirstResponder()
     }
     
     @IBAction func signInWithGoogle(_ sender: Any) {
@@ -113,6 +122,8 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     @IBAction func onReset(_ sender: UIButton) {
         global.scoutingData["teamNumber"] = ""
         teamNumberTextField.text = ""
+        global.scoutingData["scouterName"] = ""
+        scouterNameTextField.text = ""
         global.teleOpData["totalScore"] = 0
         global.teleOpData["lowerScore"] = 0
         global.teleOpData["upperScore"] = 0
