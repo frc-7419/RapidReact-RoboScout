@@ -64,6 +64,14 @@ class ProblemsTableViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func goToMainpage(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "scoutingHome")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

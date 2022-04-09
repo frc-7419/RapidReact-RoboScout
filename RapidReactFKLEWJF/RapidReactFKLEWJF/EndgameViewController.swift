@@ -129,6 +129,13 @@ class EndgameViewController: UIViewController {
         
     }
     
+    @IBAction func goToMainPage(_ sender: UIButton) {
+        let storybaord = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storybaord.instantiateViewController(withIdentifier: "scoutingHome")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
     @objc func updateTimer() {
         if (!didStopTimer) {
             secondsPassed += 1

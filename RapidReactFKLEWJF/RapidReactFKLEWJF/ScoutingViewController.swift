@@ -112,7 +112,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
                 if let error = error {
                     self.showAlert(title: "Error", message: error.localizedDescription)
                 } else {
-                    self.output.text = "Success! Teri Ma!"
+                    self.output.text = "Success!"
                 }
             }
         }
@@ -120,6 +120,7 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onReset(_ sender: UIButton) {
+        output.text = "Signed in!"
         global.scoutingData["teamNumber"] = ""
         teamNumberTextField.text = ""
         global.scoutingData["scouterName"] = ""

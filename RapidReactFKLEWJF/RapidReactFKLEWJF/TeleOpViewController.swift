@@ -57,6 +57,14 @@ class TeleOpViewController: UIViewController {
         present(vc, animated: true)
     }
     
+    @IBAction func goToMainPage(_ sender: UIButton) {
+        let storybaord = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storybaord.instantiateViewController(withIdentifier: "scoutingHome")
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    
+    
     
     
     var teleOpTotal = [""]
