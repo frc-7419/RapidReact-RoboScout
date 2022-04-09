@@ -26,6 +26,7 @@ class ProblemsTableViewController: UIViewController {
     @IBOutlet weak var endgameOutlet: UITextField!
     @IBOutlet weak var teleopOutlet: UITextField!
     @IBOutlet weak var autonOutlet: UITextField!
+    @IBOutlet weak var teamNumber: UILabel!
     @IBAction func autonFieldChanged(_ sender: UITextField) {
         global.commentsAutonData = sender.text!
     }
@@ -47,6 +48,7 @@ class ProblemsTableViewController: UIViewController {
         autonOutlet.text = global.commentsAutonData
         teleopOutlet.text = global.commentsTeleopData
         endgameOutlet.text = global.commentsEndgameData
+        teamNumber.text = global.scoutingData["teamNumber"] as! String
     }
     
     @IBAction func goToHome(_ sender: UIButton) {

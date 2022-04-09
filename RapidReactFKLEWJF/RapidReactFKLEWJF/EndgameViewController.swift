@@ -12,6 +12,7 @@ class EndgameViewController: UIViewController {
     @IBOutlet weak var lowerHubStepper: UIStepper!
     @IBOutlet weak var startTimerOutlet: UIButton!
     @IBOutlet weak var stopTimerOutlet: UIButton!
+    @IBOutlet weak var teamNumber: UILabel!
     
     @IBAction func missedPressed(_ sender: Any) {
         global.endGameData["missedShots"] = global.endGameData["missedShots"] as! Int + 1
@@ -22,6 +23,8 @@ class EndgameViewController: UIViewController {
         
         lowerHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
         upperHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
+        
+        teamNumber.text = global.scoutingData["teamNumber"] as! String
         
         scoringBonus.isOn = Bool(String(describing: global.endGameData["scoringBonus"]!)) ?? false
         hangarBonus.isOn = Bool(String(describing: global.endGameData["hangarBonus"]!)) ?? false

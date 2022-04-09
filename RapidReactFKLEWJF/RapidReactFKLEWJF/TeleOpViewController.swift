@@ -11,13 +11,16 @@ class TeleOpViewController: UIViewController {
     @IBOutlet weak var upperHubStepper: UIStepper!
     @IBOutlet weak var lowerLabel: UILabel!
     @IBOutlet weak var upperLabel: UILabel!
+    @IBOutlet weak var teamNumber: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         lowerHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
         upperHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
-
+        
+        teamNumber.text = global.scoutingData["teamNumber"] as! String
+        
         // Do any additional setup after loading the view.
         updateScore.text = String(describing: global.teleOpData["totalScore"]!)
         lowerLabel.text = String(describing: global.teleOpData["lowerScore"]!)

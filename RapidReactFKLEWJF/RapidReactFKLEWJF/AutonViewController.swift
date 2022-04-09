@@ -8,6 +8,7 @@ class AutonViewController: UIViewController {
     @IBOutlet weak var updateScore: UILabel!
     @IBOutlet weak var lowerHubStepper: UIStepper!
     @IBOutlet weak var upperHubStepper: UIStepper!
+    @IBOutlet weak var teamLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -15,6 +16,7 @@ class AutonViewController: UIViewController {
         
         lowerHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
         upperHubStepper.transform = upperHubStepper.transform.scaledBy(x: 1.4, y: 1.2)
+        teamLabel.text = global.scoutingData["teamNumber"] as! String
 
         // Do any additional setup after loading the view.
 //        updateScore.text = "0"
