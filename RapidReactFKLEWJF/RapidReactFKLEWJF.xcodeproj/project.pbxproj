@@ -25,6 +25,7 @@
 		9EFC7BD927C4275D00F049DB /* GoogleAPIClientForREST_Sheets in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BD827C4275D00F049DB /* GoogleAPIClientForREST_Sheets */; };
 		9EFC7BDC27C427A000F049DB /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 9EFC7BDB27C427A000F049DB /* GoogleSignIn */; };
 		9EFC7BDE27C48DED00F049DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */; };
+		EA9D6E90286E26030002C32C /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9D6E8F286E26030002C32C /* TeamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		9EE08AB527C34A1200B78D80 /* ProblemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProblemsViewController.swift; sourceTree = "<group>"; };
 		9EE08AB627C34A1200B78D80 /* TeleOpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeleOpViewController.swift; sourceTree = "<group>"; };
 		9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA9D6E8F286E26030002C32C /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				9EE08A8A27C349A700B78D80 /* LaunchScreen.storyboard */,
 				9EE08A8D27C349A700B78D80 /* Info.plist */,
 				9EFC7BDD27C48DED00F049DB /* GoogleService-Info.plist */,
+				EA9D6E8F286E26030002C32C /* TeamViewController.swift */,
 			);
 			path = RapidReactFKLEWJF;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				9EE08AB927C34A1200B78D80 /* EndgameViewController.swift in Sources */,
 				9EE08ABB27C34A1200B78D80 /* ProblemsViewController.swift in Sources */,
 				9EE08A8227C349A500B78D80 /* SceneDelegate.swift in Sources */,
+				EA9D6E90286E26030002C32C /* TeamViewController.swift in Sources */,
 				9EE08ABA27C34A1200B78D80 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,7 +590,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				DEVELOPMENT_TEAM = JMZ8W5795L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJFUITests;
@@ -604,7 +608,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7RYBN35C6R;
+				DEVELOPMENT_TEAM = JMZ8W5795L;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.aaravwattal.RapidReactFKLEWJF.RapidReactFKLEWJFUITests;

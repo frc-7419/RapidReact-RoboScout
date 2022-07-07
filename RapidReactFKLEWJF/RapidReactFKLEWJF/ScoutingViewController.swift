@@ -22,6 +22,8 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var EndgameOutlet: UIButton!
     @IBOutlet weak var ResetOutlet: UIButton!
     @IBOutlet weak var scouterNameTextField: UITextField!
+    @IBOutlet weak var teamimage: UIImageView!
+    @IBOutlet weak var teamButton: UIButton!
     
     @IBAction func teamNumberChanged(_ sender: Any) {
         global.scoutingData["teamNumber"] = teamNumberTextField.text!
@@ -39,9 +41,15 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         self.scouterNameTextField.delegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        teamButton.isEnabled = false
         
         teamNumberTextField.text = String(describing: global.scoutingData["teamNumber"]!) ?? ""
         scouterNameTextField.text = String(describing: global.scoutingData["scouterName"]!) ?? ""
+        var determineImage = teamNumberTextField.text
+        determineImage = (determineImage ?? "") + ".jpeg"
+        let img = UIImage(named: determineImage ?? "")
+        teamimage.image = img
+        
         
         signedInSubscription = UIApplication.appDelegate
                     .$signedInUser
@@ -157,9 +165,39 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         vc.modalPresentationStyle = .overFullScreen
         present(vc, animated: true)
     }
+    @IBAction func goToTeam(_ sender: UIButton) {
+        if (teamNumberTextField.text == "") {
+            teamButton.isEnabled = false
+        }
+        else {
+        var notion = "https://www.notion.so/81770e086fb7496b97be3006ef00b160?v=4e0445e146944365a1bea744073ccc8b"
+        if (teamNumberTextField.text == "7419") {
+            notion += "" //change link later
+        }
+        if (teamNumberTextField.text == "254") {
+            notion += "" //change link later
+        }
+        if (teamNumberTextField.text == "1678") {
+            notion += "" //change link later
+        }
+            let notionURL = URL(string: notion)!
+            if UIApplication.shared.canOpenURL(notionURL)
+            {
+                UIApplication.shared.open(notionURL)
+            } else {
+                
+                UIApplication.shared.open(URL(string: "http://notion.so/")!)
+            }
+        }
+    }
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+        var determineImage = teamNumberTextField.text
+        determineImage = (determineImage ?? "") + ".jpeg"
+        let img = UIImage(named: determineImage ?? "")
+        teamimage.image = img
+        teamButton.isEnabled = true
     }
     
     
@@ -204,6 +242,10 @@ class ScoutingViewController: UIViewController, UITextFieldDelegate {
         global.commentsTeleopData = ""
         global.commentsEndgameData = ""
         global.endGameData["timeToHang"] = 0
+        var determineImage = teamNumberTextField.text
+        determineImage = (determineImage ?? "") + ".jpeg"
+        let img = UIImage(named: determineImage ?? "")
+        teamimage.image = img
     }
     
     
